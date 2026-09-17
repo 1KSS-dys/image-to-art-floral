@@ -1,0 +1,26 @@
+case_id: "002"
+title: "粉绿人物插画 → 平面趣味型花艺"
+semantic_core: "粉绿相撞的圆润角色，构成一个轻微怪趣的平面世界。"
+key_features: ["浅豆绿与粉色平衡", "圆润几何块面", "哑光纸感", "中心稳定", "局部俏皮探出"]
+mapping:
+  flower: "浅粉团花承担角色主体，奶白花负责缓冲。"
+  branch: "少量细长枝材承担插画藤蔓和轻微互动。"
+  leaf_or_grass: "深绿球形花与叶材承担头发和图形强调。"
+  wrapper: "浅豆绿大块雾面纸承担插画背景。"
+  backboard: "平整色块建立海报式构图。"
+  special_material: "轻纹理纸和少量抽象几何点保留手工感。"
+  negative_space: "围绕中心主体保留干净背景。"
+structure: {silhouette: "中心聚拢局部上扬", height: "medium_high", width: "medium", density: "medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 2}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["浅豆绿", "牛油果绿"]
+  secondary: ["浅粉", "奶白"]
+  accent: ["深绿"]
+  accent_behavior: "以小团块和细线出现，维持粉绿平衡。"
+  purity: 4
+  relationship: "低到中饱和的粉绿互补，白色负责停顿。"
+motion: {primary: "static", secondary: "small_upward_gesture", direction: "整体直立，少量向外探出", strength: 1}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["papery", "matte", "organic"]}
+key_rule: "平面插画优先转译色块、图形和气质，不复制人物五官或动作。"
+avoid: ["人物头像大卡", "高饱和荧光粉绿", "野生发散结构", "仙气珠光包装"]
+retrieval_tags: ["平面插画", "粉绿", "圆润", "色块", "纸感", "角色气质", "静态", "轻怪趣"]

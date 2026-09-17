@@ -1,0 +1,26 @@
+case_id: "009"
+title: "青春男团视觉 → 群像节奏型花艺"
+semantic_core: "几种不同性格聚在一起，彼此靠近又各自向外发声。"
+key_features: ["多人物群像", "黑色舞台底", "红青色群对撞", "多个中型焦点", "共同的青春节奏"]
+mapping:
+  flower: "红、珊瑚、青绿等多个中型焦点承担成员差异，不做一人一花。"
+  branch: "多方向伸出的异形花和枝材承担各自性格。"
+  leaf_or_grass: "青绿染色叶材提升为主色角色，不退回普通绿叶。"
+  wrapper: "高饱和红与黑色包装建立舞台和热度。"
+  backboard: "黑色硬板统一所有焦点。"
+  special_material: "少量格纹和图形卡纸补充青春流行文化气质。"
+  negative_space: "在相邻焦点间留出识别间隔，同时保持群体聚合。"
+structure: {silhouette: "外放扇形群像型", height: "medium_high", width: "medium_wide", density: "medium_high", center_of_gravity: "middle", focus_architecture: "multi_focus", asymmetry: 4}
+palette:
+  mode: "organized_multicolor"
+  dominant: ["黑色", "深灰黑"]
+  secondary: ["珊瑚红", "玫红", "青绿", "蓝绿"]
+  accent: ["亮黄", "浅蓝", "白色"]
+  accent_behavior: "黄色只作小范围亮声部。"
+  purity: 2
+  relationship: "深色底盘上红与青绿形成两个主要色群，亮黄短促跳出。"
+motion: {primary: "directional", secondary: "group_outward_energy", direction: "多个方向外放并回到共同中轴", strength: 3}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["papery", "matte", "synthetic", "textile"]}
+key_rule: "群像图要翻译成员之间的关系与节奏，不要建立一人对应一朵花的机械映射。"
+avoid: ["一人一花", "单一绝对主花压住群像", "红花绿叶的自然默认", "平均分区式配色"]
+retrieval_tags: ["群像", "男团", "多焦点", "青春", "红青撞色", "外放", "伙伴", "舞台"]

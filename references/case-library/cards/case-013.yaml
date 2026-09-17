@@ -1,0 +1,26 @@
+case_id: "013"
+title: "高饱和彩色爆发图 → 放射能量型花艺"
+semantic_core: "巨大的彩色能量从一个清晰核心向四周突然释放。"
+key_features: ["单一绝对能量核", "高饱和暖色主体", "青蓝强对冲", "中心放射", "外围粒子飞散"]
+mapping:
+  flower: "大型放射花心承担能量源，黄白小花承担火花和粒子。"
+  branch: "红色高挑枝叶承担向上喷射。"
+  leaf_or_grass: "青蓝尖叶制造冷暖电流和外扩速度。"
+  wrapper: "玫红与红橙包装承担能量主体。"
+  backboard: "彩色渐变面扩大爆发光场。"
+  special_material: "银色容器、白色细线和反光丝带承担未来冷光与轨迹。"
+  negative_space: "用外部黑暗衬出高密度能量核，不让色群失去边界。"
+structure: {silhouette: "放射火焰装置型", height: "high", width: "medium_wide", density: "high", center_of_gravity: "central_lower", focus_architecture: "single_focus", asymmetry: 4}
+palette:
+  mode: "radial_energy"
+  dominant: ["玫红", "珊瑚红", "橙红"]
+  secondary: ["明黄", "柠檬黄"]
+  accent: ["青蓝", "薄荷青", "少量绿色"]
+  accent_behavior: "冷色形成强对冲，黄色以高频小点发光。"
+  purity: 1
+  relationship: "暖色能量主体围绕中心爆开，冷色穿插但不平均。"
+motion: {primary: "radial_explosion", secondary: "upward_jet_and_particles", direction: "中心向外围并强烈向上", strength: 5}
+physical_dna: {hardness: "structured", gravity: "weightless", material_identity: ["glossy", "metallic", "synthetic"]}
+key_rule: "多彩爆发必须共享一个能量源；多色不是平均分布，而是被中心与方向组织。"
+avoid: ["平均彩虹配色", "没有主焦点的随机散开", "黑暗底盘消失", "柔和低能量轮廓"]
+retrieval_tags: ["能量爆发", "放射", "高饱和", "多彩", "中心焦点", "粒子", "霓虹", "幻想"]

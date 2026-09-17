@@ -1,0 +1,86 @@
+version: "1.2"
+purpose: "Choose color behavior after material selection; treatment is conditional, never a prestige effect."
+
+color_design_schema:
+  base_color: ""
+  treatment: natural
+  secondary_color: ""
+  distribution: uniform
+  intensity: low
+
+color_treatment_gate:
+  required: false
+  reason: ""
+
+gate_rules:
+  prefer_natural_when_sufficient: true
+  allow_when:
+    - non_natural_visual_color_is_level_1_or_important_level_2
+    - visible_gradient_or_light_contamination_is_structurally_important
+    - surreal_or_editorial_color_behavior_is_source_supported
+    - strong_visual_theme_requires_color_unavailable_naturally
+    - source_has_a_material_two_color_relationship
+    - natural_materials_cannot_preserve_the_palette_relationship
+  forbid_when:
+    - added_only_to_make_the_bouquet_look_expensive
+    - treatment_has_no_source_derived_visual_function
+    - natural_color_already_completes_the_task
+    - treatment_would_hide_required_natural_texture
+
+treatments:
+  natural:
+    name_cn: 天然色
+    behavior: "Retain the material's natural color and surface variation."
+  absorption_dye:
+    name_cn: 吸色
+    behavior: "Color travels through vessels and appears organically uneven, often strongest at veins or petal extremities."
+  spray_dye:
+    name_cn: 喷色
+    behavior: "A controlled surface layer; may be uniform, one-sided, clouded, or localized while texture stays visible."
+  gradient_dye:
+    name_cn: 渐变染
+    behavior: "A deliberate transition between base and secondary color along a stated spatial path."
+  edge_dye:
+    name_cn: 染边
+    behavior: "Secondary color concentrates at petal, leaf, or material edges."
+  center_dye:
+    name_cn: 染心
+    behavior: "Secondary color concentrates at the floral center or inner folds and releases outward."
+  dip_dye:
+    name_cn: 浸染
+    behavior: "One end or region is immersed, producing a bounded but irregular color front."
+  two_tone:
+    name_cn: 双拼色
+    behavior: "Two distinct colors coexist in a controlled division rather than becoming a uniform mix."
+  bleach:
+    name_cn: 漂白
+    behavior: "Remove or mute natural pigment while retaining veins, dryness, and material texture."
+  metallic_spray:
+    name_cn: 金属喷涂
+    behavior: "Add a metallic surface response only when reflective or industrial identity is required."
+  matte_coating:
+    name_cn: 哑光处理
+    behavior: "Suppress gloss and saturation to create a dry, chalky, printed, or coated surface."
+
+distributions:
+  - uniform
+  - center_to_edge
+  - edge_to_center
+  - top_to_bottom
+  - bottom_to_top
+  - one_side
+  - random_cloud
+  - vein_following
+  - spot
+  - layered
+
+intensities: [low, medium, high]
+
+compatibility_rule:
+  scale: "1-5; 1 means avoid, 2 means weak, 3 means conditional, 4 means suitable, 5 means highly suitable."
+  minimum_preferred_score: 3
+  fallback_order:
+    - choose_a_visually_similar_material_with_higher_treatment_tolerance
+    - assign_the_color_behavior_to_wrapper_foliage_or_special_material
+    - simplify_to_natural_color_if_the_palette_relationship_still_holds
+  prohibition: "Never force an arbitrary treatment onto a low-tolerance material."

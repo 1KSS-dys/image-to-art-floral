@@ -1,0 +1,26 @@
+case_id: "020"
+title: "红青赛博装置图 → 双极能量型花艺"
+semantic_core: "红色热能与青色冷能量在黑暗空间里互相穿刺和撕扯。"
+key_features: ["黑色深空", "红青双极", "两色互相入侵但不混色", "锐利飞禽武器轮廓", "下坠能量拖尾"]
+mapping:
+  flower: "红色天堂鸟与青色大型花分别承担热能和冷能量焦点。"
+  branch: "黑枝承担武器骨架、空间切割和两极拉扯。"
+  leaf_or_grass: "黑色刀片叶与尖叶承担危险边缘。"
+  wrapper: "黑色硬纸和断裂红面承担深空与热能裂口。"
+  backboard: "黑色大面隔离红青，维持色相纯度。"
+  special_material: "金属细线、红色垂坠材料和冷光泽表面承担能量泄漏。"
+  negative_space: "大面积黑色空隙将红青两极隔开，同时允许结构咬合。"
+structure: {silhouette: "非对称刺状装置型", height: "high", width: "medium_wide", density: "medium", center_of_gravity: "middle_right", focus_architecture: "dual_focus", asymmetry: 5}
+palette:
+  mode: "opposition"
+  dominant: ["黑色", "深黑"]
+  secondary: ["高饱和红", "猩红", "电光青", "冰蓝"]
+  accent: ["极少深蓝", "冷灰", "暗紫"]
+  accent_behavior: "红青互相穿插但不混成紫，中间色只服务过渡。"
+  purity: 5
+  relationship: "黑色隔离介质中的红青双阵营对抗与咬合。"
+motion: {primary: "collision", secondary: "downward_drip", direction: "红青反向刺出，黑骨架拉扯，局部下坠", strength: 5}
+physical_dna: {hardness: "mechanical", gravity: "heavy", material_identity: ["metallic", "glossy", "synthetic"]}
+key_rule: "高对比双色必须判断关系；对抗型双色可以咬合，但要保持各自色相纯度。"
+avoid: ["红蓝左右对称各一半", "混成紫色渐变", "大量圆润玫瑰", "廉价银色亮片", "忽略黑色负空间"]
+retrieval_tags: ["红青对抗", "赛博", "双焦点", "碰撞", "黑色负空间", "尖锐", "能量拖尾", "生物机械"]

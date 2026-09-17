@@ -1,0 +1,443 @@
+version: "1.2"
+purpose: "High-value floral candidates selected by visual function, not prestige or habit."
+materials:
+  - material_id: double_lily
+    name_cn: 重瓣百合
+    name_en: Double Lily
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: high, silhouette: radial, geometry: organic}, texture: {softness: soft, surface: matte, richness: high}, line_character: {type: radial, directionality: medium}, physical_dna: {hardness: flexible, gravity: neutral, volume: full}}
+    roles: [hero, secondary_focus]
+    mood_tags: [dreamy, romantic, luxurious, surreal, soft_editorial]
+    natural_palette: [white, cream, pink, pale_yellow]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 2, metallic_spray: 3}
+    avoid_when: [mechanical, extremely_minimal, harsh_industrial]
+
+  - material_id: oriental_lily
+    name_cn: 东方百合
+    name_en: Oriental Lily
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: medium, silhouette: star_radial, geometry: organic}, texture: {softness: soft, surface: satin_matte, richness: high}, line_character: {type: radial, directionality: strong}, physical_dna: {hardness: flexible, gravity: neutral, volume: full}}
+    roles: [hero, secondary_focus]
+    mood_tags: [radiant, sensual, ceremonial, dramatic]
+    natural_palette: [white, pink, cream, yellow]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 2, metallic_spray: 2}
+    avoid_when: [tiny_scale, severe_mechanical]
+
+  - material_id: lily
+    name_cn: 百合
+    name_en: Lily
+    category: flower
+    visual_profile: {scale: large, visual_strength: 4, morphology: {openness: open, petal_density: low, silhouette: trumpet_star, geometry: organic}, texture: {softness: soft, surface: smooth, richness: medium}, line_character: {type: directional_radial, directionality: strong}, physical_dna: {hardness: flexible, gravity: neutral, volume: open}}
+    roles: [hero, support, motion]
+    mood_tags: [clear, luminous, elegant, expansive]
+    natural_palette: [white, cream, yellow, orange, pink]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 4, edge_dye: 4, center_dye: 4, bleach: 2, metallic_spray: 2}
+    avoid_when: [dense_micro_focus]
+
+  - material_id: peony
+    name_cn: 芍药
+    name_en: Peony
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: very_high, silhouette: round_cloud, geometry: organic}, texture: {softness: very_soft, surface: matte, richness: high}, line_character: {type: mass, directionality: low}, physical_dna: {hardness: soft, gravity: heavy_soft, volume: full}}
+    roles: [hero, secondary_focus]
+    mood_tags: [lush, tender, abundant, dreamy]
+    natural_palette: [white, blush, pink, coral, red]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 4, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 1, metallic_spray: 2}
+    avoid_when: [mechanical, sparse_linear]
+
+  - material_id: dahlia
+    name_cn: 大丽花
+    name_en: Dahlia
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: very_high, silhouette: geometric_radial, geometry: ordered_organic}, texture: {softness: medium, surface: matte, richness: high}, line_character: {type: radial, directionality: strong}, physical_dna: {hardness: structured, gravity: neutral, volume: full}}
+    roles: [hero, secondary_focus]
+    mood_tags: [graphic, opulent, precise, energetic]
+    natural_palette: [white, yellow, orange, pink, red, burgundy, purple]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 4, edge_dye: 5, center_dye: 4, bleach: 1, metallic_spray: 3}
+    avoid_when: [weightless_minimal]
+
+  - material_id: double_tulip
+    name_cn: 重瓣郁金香
+    name_en: Double Tulip
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 4, morphology: {openness: semi_open, petal_density: high, silhouette: rounded_cup, geometry: organic}, texture: {softness: soft, surface: satin, richness: high}, line_character: {type: curved, directionality: medium}, physical_dna: {hardness: flexible, gravity: bending, volume: full}}
+    roles: [hero, secondary_focus, motion]
+    mood_tags: [painterly, tender, unusual, soft_editorial]
+    natural_palette: [white, cream, yellow, orange, pink, red, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 4, gradient_dye: 5, edge_dye: 5, center_dye: 3, bleach: 2, metallic_spray: 2}
+    avoid_when: [hard_architectural]
+
+  - material_id: large_tulip
+    name_cn: 大型郁金香
+    name_en: Large Tulip
+    category: flower
+    visual_profile: {scale: large, visual_strength: 4, morphology: {openness: cup, petal_density: medium, silhouette: elongated_cup, geometry: clean_organic}, texture: {softness: soft, surface: smooth, richness: medium}, line_character: {type: curved_linear, directionality: strong}, physical_dna: {hardness: flexible, gravity: bending, volume: medium}}
+    roles: [hero, support, motion]
+    mood_tags: [minimal, sculptural, alive, restrained]
+    natural_palette: [white, yellow, orange, pink, red, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 4, gradient_dye: 5, edge_dye: 5, center_dye: 3, bleach: 2, metallic_spray: 2}
+    avoid_when: [dense_ornamental]
+
+  - material_id: phalaenopsis
+    name_cn: 蝴蝶兰
+    name_en: Phalaenopsis Orchid
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 5, morphology: {openness: open, petal_density: low, silhouette: winged, geometry: bilateral}, texture: {softness: medium, surface: porcelain_smooth, richness: medium}, line_character: {type: cascading_arc, directionality: strong}, physical_dna: {hardness: flexible, gravity: floating, volume: open}}
+    roles: [hero, secondary_focus, motion]
+    mood_tags: [surreal, poised, floating, graphic]
+    natural_palette: [white, cream, pink, purple, yellow]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 5, bleach: 1, metallic_spray: 3}
+    avoid_when: [rough_handmade, cheap_casual]
+
+  - material_id: large_anthurium
+    name_cn: 大花红掌
+    name_en: Large Anthurium
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: planar, petal_density: single_spathe, silhouette: heart_shield, geometry: graphic}, texture: {softness: firm, surface: glossy, richness: medium}, line_character: {type: planar_directional, directionality: strong}, physical_dna: {hardness: structured, gravity: neutral, volume: planar}}
+    roles: [hero, structure, accent]
+    mood_tags: [graphic, tropical, assertive, surreal, industrial_editorial]
+    natural_palette: [red, pink, white, green, burgundy]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 5, gradient_dye: 4, edge_dye: 5, center_dye: 4, bleach: 2, metallic_spray: 5}
+    avoid_when: [soft_misty, childlike_tender]
+
+  - material_id: calla_lily
+    name_cn: 马蹄莲
+    name_en: Calla Lily
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 5, morphology: {openness: curled, petal_density: single_spathe, silhouette: trumpet_curve, geometry: sculptural}, texture: {softness: firm, surface: smooth, richness: low}, line_character: {type: sweeping_curve, directionality: strong}, physical_dna: {hardness: flexible, gravity: directional, volume: hollow}}
+    roles: [hero, support, motion]
+    mood_tags: [sculptural, minimal, tense, elegant]
+    natural_palette: [white, cream, yellow, orange, pink, purple, black_burgundy]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 4, center_dye: 4, bleach: 2, metallic_spray: 4}
+    avoid_when: [fluffy_cottage]
+
+  - material_id: king_protea
+    name_cn: 帝王花
+    name_en: King Protea
+    category: flower
+    visual_profile: {scale: very_large, visual_strength: 5, morphology: {openness: open, petal_density: high, silhouette: crown_radial, geometry: architectural_organic}, texture: {softness: firm, surface: textured, richness: high}, line_character: {type: radial_mass, directionality: medium}, physical_dna: {hardness: hard, gravity: heavy, volume: monumental}}
+    roles: [hero, structure]
+    mood_tags: [monumental, primal, dry, powerful]
+    natural_palette: [pink, cream, red, muted_green]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 4, gradient_dye: 3, edge_dye: 3, center_dye: 2, bleach: 3, metallic_spray: 4}
+    avoid_when: [delicate_micro, weightless]
+
+  - material_id: large_hydrangea
+    name_cn: 大型绣球
+    name_en: Large Hydrangea
+    category: flower
+    visual_profile: {scale: large, visual_strength: 4, morphology: {openness: mass, petal_density: high, silhouette: cloud_sphere, geometry: clustered}, texture: {softness: soft, surface: matte, richness: high}, line_character: {type: mass, directionality: low}, physical_dna: {hardness: soft, gravity: heavy_soft, volume: full}}
+    roles: [hero, environment, support]
+    mood_tags: [cloudlike, abundant, atmospheric, enveloping]
+    natural_palette: [white, green, blue, pink, purple]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 4, gradient_dye: 5, edge_dye: 3, center_dye: 3, bleach: 3, metallic_spray: 2}
+    avoid_when: [sharp_linear, mechanical]
+
+  - material_id: cockscomb
+    name_cn: 鸡冠花
+    name_en: Cockscomb Celosia
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 5, morphology: {openness: crest, petal_density: fused_dense, silhouette: folded_brain, geometry: irregular}, texture: {softness: plush, surface: velvet, richness: high}, line_character: {type: mass_wave, directionality: medium}, physical_dna: {hardness: structured_soft, gravity: heavy, volume: dense}}
+    roles: [hero, accent, texture]
+    mood_tags: [strange, tactile, grotesque, playful, surreal]
+    natural_palette: [red, magenta, orange, yellow, green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 4, gradient_dye: 3, edge_dye: 3, center_dye: 2, bleach: 2, metallic_spray: 3}
+    avoid_when: [clean_minimal, airy]
+
+  - material_id: large_dendrobium
+    name_cn: 大型石斛兰
+    name_en: Large Dendrobium Orchid
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: low, silhouette: segmented_spire, geometry: rhythmic}, texture: {softness: medium, surface: satin, richness: medium}, line_character: {type: articulated_line, directionality: strong}, physical_dna: {hardness: flexible, gravity: directional, volume: open}}
+    roles: [hero, secondary_focus, motion]
+    mood_tags: [rhythmic, exotic, graphic, elongated]
+    natural_palette: [white, purple, pink, green, yellow]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 2, metallic_spray: 3}
+    avoid_when: [compact_round]
+
+  - material_id: large_orchid
+    name_cn: 大型兰花类
+    name_en: Large Orchid Family
+    category: flower
+    variants: [大花蕙兰, 万代兰, 卡特兰]
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: open, petal_density: medium, silhouette: exotic_bilateral, geometry: sculptural_organic}, texture: {softness: medium, surface: waxy_satin, richness: high}, line_character: {type: focal_arc, directionality: medium}, physical_dna: {hardness: structured_flexible, gravity: neutral, volume: open}}
+    roles: [hero, secondary_focus]
+    mood_tags: [exotic, sculptural, saturated, ceremonial]
+    natural_palette: [white, yellow, green, pink, purple, burgundy]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 5, bleach: 1, metallic_spray: 3}
+    avoid_when: [rough_plain_without_support]
+
+  - material_id: ranunculus
+    name_cn: 洋牡丹
+    name_en: Ranunculus
+    aliases_cn: [毛茛]
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 3, morphology: {openness: layered, petal_density: high, silhouette: round_rosette, geometry: organic}, texture: {softness: soft, surface: matte, richness: high}, line_character: {type: compact_mass, directionality: low}, physical_dna: {hardness: soft, gravity: neutral, volume: medium}}
+    roles: [support, secondary_focus, transition]
+    mood_tags: [delicate, layered, painterly]
+    natural_palette: [white, cream, yellow, orange, pink, red, purple]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 1, metallic_spray: 2}
+    avoid_when: [hard_mechanical_hero]
+
+  - material_id: anemone
+    name_cn: 银莲花
+    name_en: Anemone
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 4, morphology: {openness: open, petal_density: low, silhouette: disc_radial, geometry: graphic}, texture: {softness: soft, surface: matte, richness: medium}, line_character: {type: radial_disc, directionality: medium}, physical_dna: {hardness: flexible, gravity: neutral, volume: flat_open}}
+    roles: [secondary_focus, support, accent]
+    mood_tags: [graphic, alert, delicate, contrast]
+    natural_palette: [white, pink, red, purple, blue]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 4, edge_dye: 5, center_dye: 5, bleach: 1, metallic_spray: 2}
+    avoid_when: [deep_mass_only]
+
+  - material_id: clematis
+    name_cn: 铁线莲
+    name_en: Clematis
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 3, morphology: {openness: open, petal_density: low, silhouette: star, geometry: organic}, texture: {softness: soft, surface: matte, richness: low}, line_character: {type: vine_star, directionality: medium}, physical_dna: {hardness: flexible, gravity: floating, volume: open}}
+    roles: [support, small_event, transition]
+    mood_tags: [wild, airy, lyrical]
+    natural_palette: [white, pink, purple, blue]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 3, gradient_dye: 4, edge_dye: 4, center_dye: 4, bleach: 1, metallic_spray: 1}
+    avoid_when: [hard_industrial]
+
+  - material_id: sweet_pea
+    name_cn: 香豌豆
+    name_en: Sweet Pea
+    category: flower
+    visual_profile: {scale: small_medium, visual_strength: 2, morphology: {openness: fluttering, petal_density: low, silhouette: ruffled, geometry: organic}, texture: {softness: very_soft, surface: matte, richness: medium}, line_character: {type: fluttering_line, directionality: medium}, physical_dna: {hardness: soft, gravity: floating, volume: airy}}
+    roles: [support, atmosphere, transition]
+    mood_tags: [soft, fluttering, tender, breezy]
+    natural_palette: [white, cream, pink, peach, lavender, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 3, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 1, metallic_spray: 1}
+    avoid_when: [rigid_mechanical]
+
+  - material_id: freesia
+    name_cn: 小苍兰
+    name_en: Freesia
+    category: flower
+    visual_profile: {scale: small_medium, visual_strength: 3, morphology: {openness: semi_open, petal_density: low, silhouette: one_sided_spray, geometry: rhythmic}, texture: {softness: medium, surface: smooth, richness: low}, line_character: {type: articulated_curve, directionality: strong}, physical_dna: {hardness: flexible, gravity: directional, volume: open}}
+    roles: [support, motion, transition]
+    mood_tags: [fresh, rhythmic, precise]
+    natural_palette: [white, yellow, orange, pink, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 4, gradient_dye: 4, edge_dye: 3, center_dye: 3, bleach: 1, metallic_spray: 1}
+    avoid_when: [heavy_mass]
+
+  - material_id: dendrobium
+    name_cn: 石斛兰
+    name_en: Dendrobium Orchid
+    aliases_cn: [小型兰花花序]
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 3, morphology: {openness: open, petal_density: low, silhouette: segmented_spire, geometry: rhythmic}, texture: {softness: medium, surface: satin, richness: medium}, line_character: {type: articulated_line, directionality: strong}, physical_dna: {hardness: flexible, gravity: neutral, volume: open}}
+    roles: [support, secondary_focus, motion]
+    mood_tags: [rhythmic, clean, exotic]
+    natural_palette: [white, purple, pink, green, yellow]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 2, metallic_spray: 3}
+    avoid_when: [dense_round_only]
+
+  - material_id: oncidium
+    name_cn: 文心兰
+    name_en: Oncidium Orchid
+    category: flower
+    visual_profile: {scale: small, visual_strength: 3, morphology: {openness: open, petal_density: low, silhouette: branching_spray, geometry: rhythmic}, texture: {softness: medium, surface: satin, richness: medium}, line_character: {type: branching_dance, directionality: strong}, physical_dna: {hardness: flexible, gravity: floating, volume: airy}}
+    roles: [support, atmosphere, motion, small_event]
+    mood_tags: [dancing, bright, active, airy]
+    natural_palette: [yellow, brown, white, burgundy]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 4, gradient_dye: 4, edge_dye: 4, center_dye: 4, bleach: 1, metallic_spray: 2}
+    avoid_when: [silent_minimal]
+
+  - material_id: cymbidium
+    name_cn: 蕙兰
+    name_en: Cymbidium Orchid
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 4, morphology: {openness: open, petal_density: medium, silhouette: clustered_spire, geometry: structured_organic}, texture: {softness: firm, surface: waxy, richness: high}, line_character: {type: segmented_line, directionality: strong}, physical_dna: {hardness: structured_flexible, gravity: neutral, volume: medium}}
+    roles: [secondary_focus, support, structure]
+    mood_tags: [structured, ceremonial, rich]
+    natural_palette: [white, green, yellow, pink, brown, burgundy]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 4, edge_dye: 5, center_dye: 5, bleach: 1, metallic_spray: 3}
+    avoid_when: [very_soft_mist]
+
+  - material_id: fritillaria
+    name_cn: 贝母
+    name_en: Fritillaria
+    category: flower
+    visual_profile: {scale: small_medium, visual_strength: 3, morphology: {openness: bell, petal_density: low, silhouette: drooping_bell, geometry: organic}, texture: {softness: soft, surface: matte, richness: low}, line_character: {type: nodding_line, directionality: strong}, physical_dna: {hardness: flexible, gravity: downward, volume: light}}
+    roles: [support, small_event, motion]
+    mood_tags: [strange, delicate, downward, quiet]
+    natural_palette: [green, purple, burgundy, cream]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 3, gradient_dye: 3, edge_dye: 4, center_dye: 3, bleach: 1, metallic_spray: 1}
+    avoid_when: [large_monumental_focus]
+
+  - material_id: iris
+    name_cn: 鸢尾
+    name_en: Iris
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 4, morphology: {openness: open, petal_density: low, silhouette: blade_and_fall, geometry: angular_organic}, texture: {softness: medium, surface: satin_matte, richness: medium}, line_character: {type: directional_fan, directionality: strong}, physical_dna: {hardness: structured_flexible, gravity: directional, volume: open}}
+    roles: [secondary_focus, support, motion]
+    mood_tags: [sharp, painterly, electric, poised]
+    natural_palette: [blue, purple, yellow, white]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 5, edge_dye: 5, center_dye: 5, bleach: 1, metallic_spray: 2}
+    avoid_when: [round_soft_only]
+
+  - material_id: pincushion
+    name_cn: 针垫花
+    name_en: Pincushion Protea
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 4, morphology: {openness: radial, petal_density: sparse_needles, silhouette: spiky_disc, geometry: radial}, texture: {softness: firm, surface: dry_textured, richness: medium}, line_character: {type: radial_spike, directionality: strong}, physical_dna: {hardness: structured, gravity: neutral, volume: open}}
+    roles: [secondary_focus, accent, texture]
+    mood_tags: [electric, dry, strange, energetic]
+    natural_palette: [orange, yellow, red]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 4, gradient_dye: 3, edge_dye: 2, center_dye: 3, bleach: 3, metallic_spray: 4}
+    avoid_when: [soft_romantic]
+
+  - material_id: siam_tulip
+    name_cn: 姜荷花
+    name_en: Siam Tulip
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 4, morphology: {openness: stacked_bracts, petal_density: medium, silhouette: torch_cup, geometry: layered}, texture: {softness: firm, surface: smooth, richness: medium}, line_character: {type: vertical, directionality: strong}, physical_dna: {hardness: structured, gravity: upright, volume: medium}}
+    roles: [secondary_focus, support, structure]
+    mood_tags: [tropical, clean, stacked, upright]
+    natural_palette: [pink, white, green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 2, metallic_spray: 4}
+    avoid_when: [wispy_mist]
+
+  - material_id: torch_ginger
+    name_cn: 火炬姜
+    name_en: Torch Ginger
+    category: flower
+    visual_profile: {scale: large, visual_strength: 5, morphology: {openness: layered_bracts, petal_density: high, silhouette: torch, geometry: architectural}, texture: {softness: firm, surface: waxy, richness: high}, line_character: {type: vertical_mass, directionality: strong}, physical_dna: {hardness: hard, gravity: heavy, volume: dense}}
+    roles: [hero, secondary_focus, structure]
+    mood_tags: [tropical, monumental, hot, architectural]
+    natural_palette: [red, pink, orange]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 5, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 2, metallic_spray: 4}
+    avoid_when: [tiny_delicate]
+
+  - material_id: spider_chrysanthemum
+    name_cn: 蜘蛛菊
+    name_en: Spider Chrysanthemum
+    category: flower
+    visual_profile: {scale: medium_large, visual_strength: 4, morphology: {openness: open, petal_density: high, silhouette: exploding_filaments, geometry: radial}, texture: {softness: medium, surface: matte, richness: high}, line_character: {type: radial_filament, directionality: strong}, physical_dna: {hardness: flexible, gravity: neutral, volume: open}}
+    roles: [secondary_focus, support, motion, texture]
+    mood_tags: [kinetic, wiry, strange, energetic]
+    natural_palette: [white, green, yellow, orange, pink, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 5, gradient_dye: 4, edge_dye: 4, center_dye: 4, bleach: 2, metallic_spray: 3}
+    avoid_when: [calm_monolithic]
+
+  - material_id: delphinium
+    name_cn: 飞燕草
+    name_en: Delphinium
+    category: flower
+    visual_profile: {scale: tall, visual_strength: 4, morphology: {openness: small_open, petal_density: segmented, silhouette: spire, geometry: linear}, texture: {softness: soft, surface: matte, richness: medium}, line_character: {type: long_spire, directionality: strong}, physical_dna: {hardness: flexible, gravity: upright, volume: airy}}
+    line: {length: long, curvature: low_medium, flexibility: flexible, directionality: strong, motion_fit: [upward, sweeping, wind]}
+    roles: [motion, structure, support]
+    mood_tags: [ascending, airy, elongated, atmospheric]
+    natural_palette: [blue, purple, white, pink]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 4, gradient_dye: 5, edge_dye: 3, center_dye: 3, bleach: 2, metallic_spray: 2}
+    avoid_when: [compact_low]
+
+  - material_id: gladiolus
+    name_cn: 剑兰
+    name_en: Gladiolus
+    category: flower
+    visual_profile: {scale: tall, visual_strength: 5, morphology: {openness: sequential, petal_density: medium, silhouette: blade_spire, geometry: linear}, texture: {softness: medium, surface: matte, richness: medium}, line_character: {type: long_rigid_spire, directionality: very_strong}, physical_dna: {hardness: structured, gravity: upright, volume: medium}}
+    line: {length: long, curvature: low, flexibility: structured, directionality: very_strong, motion_fit: [upward, linear, mechanical_extension]}
+    roles: [motion, structure, secondary_focus]
+    mood_tags: [architectural, assertive, vertical, ceremonial]
+    natural_palette: [white, yellow, orange, pink, red, purple]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 4, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 2, metallic_spray: 3}
+    avoid_when: [floating_micro]
+
+  - material_id: snapdragon
+    name_cn: 金鱼草
+    name_en: Snapdragon
+    category: flower
+    visual_profile: {scale: tall, visual_strength: 3, morphology: {openness: sequential, petal_density: medium, silhouette: tapered_spire, geometry: linear}, texture: {softness: soft, surface: matte, richness: medium}, line_character: {type: tapered_line, directionality: strong}, physical_dna: {hardness: flexible, gravity: upright, volume: medium}}
+    line: {length: long, curvature: medium, flexibility: flexible, directionality: strong, motion_fit: [upward, flowing, sweeping]}
+    roles: [motion, support, structure]
+    mood_tags: [rhythmic, playful, vertical, transitional]
+    natural_palette: [white, yellow, orange, pink, red, purple]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 4, gradient_dye: 5, edge_dye: 3, center_dye: 3, bleach: 2, metallic_spray: 2}
+    avoid_when: [flat_planar]
+
+  - material_id: foxtail_lily
+    name_cn: 狐尾百合
+    name_en: Foxtail Lily
+    category: flower
+    visual_profile: {scale: very_tall, visual_strength: 5, morphology: {openness: tiny_clustered, petal_density: dense, silhouette: tapering_column, geometry: linear}, texture: {softness: medium, surface: textured, richness: high}, line_character: {type: monumental_spire, directionality: very_strong}, physical_dna: {hardness: structured, gravity: upright, volume: dense_linear}}
+    line: {length: very_long, curvature: low, flexibility: structured, directionality: very_strong, motion_fit: [upward, radial_outward, mechanical_extension]}
+    roles: [motion, structure, secondary_focus]
+    mood_tags: [monumental, ascending, graphic, radiant]
+    natural_palette: [white, yellow, orange, pink]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 4, edge_dye: 2, center_dye: 2, bleach: 2, metallic_spray: 3}
+    avoid_when: [low_horizontal]
+
+  - material_id: astilbe
+    name_cn: 落新妇
+    name_en: Astilbe
+    aliases_cn: [细枝花序]
+    category: flower
+    visual_profile: {scale: medium, visual_strength: 2, morphology: {openness: plume, petal_density: micro_dense, silhouette: feathered_spire, geometry: branching}, texture: {softness: soft, surface: fuzzy, richness: medium}, line_character: {type: soft_plume, directionality: medium}, physical_dna: {hardness: flexible, gravity: drifting, volume: airy}}
+    line: {length: medium, curvature: medium, flexibility: flexible, directionality: medium, motion_fit: [floating, flowing, wind]}
+    roles: [atmosphere, motion, transition, support]
+    mood_tags: [misty, feathered, soft, atmospheric]
+    natural_palette: [white, cream, pink, red]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 4, gradient_dye: 4, edge_dye: 2, center_dye: 2, bleach: 3, metallic_spray: 2}
+    avoid_when: [hard_minimal]
+
+  - material_id: pampas
+    name_cn: 蒲苇
+    name_en: Pampas Grass
+    aliases_cn: [羽毛状植物]
+    category: grass
+    visual_profile: {scale: tall, visual_strength: 3, morphology: {openness: plume, petal_density: none, silhouette: feathered_column, geometry: linear}, texture: {softness: soft, surface: fuzzy, richness: high}, line_character: {type: sweeping_plume, directionality: strong}, physical_dna: {hardness: flexible, gravity: drifting, volume: airy_full}}
+    line: {length: long, curvature: high, flexibility: flexible, directionality: strong, motion_fit: [wind, flowing, downward, sweeping]}
+    roles: [atmosphere, motion, structure]
+    mood_tags: [wind, dry, soft, sweeping]
+    natural_palette: [cream, beige, brown, blush]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 5, gradient_dye: 4, edge_dye: 2, center_dye: 1, bleach: 4, metallic_spray: 4}
+    avoid_when: [wet_glossy]
+
+  - material_id: miscanthus
+    name_cn: 芒草
+    name_en: Miscanthus
+    category: grass
+    visual_profile: {scale: tall, visual_strength: 3, morphology: {openness: plume, petal_density: none, silhouette: fine_fan, geometry: linear}, texture: {softness: medium, surface: dry, richness: medium}, line_character: {type: sweeping_fine_line, directionality: strong}, physical_dna: {hardness: flexible, gravity: bending, volume: airy}}
+    line: {length: long, curvature: high, flexibility: flexible, directionality: strong, motion_fit: [wind, flowing, downward, sweeping]}
+    roles: [motion, atmosphere, structure]
+    mood_tags: [wind, field, sweeping, dry]
+    natural_palette: [green, cream, tan, brown]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 5, gradient_dye: 4, edge_dye: 2, center_dye: 1, bleach: 4, metallic_spray: 4}
+    avoid_when: [dense_luxurious]
+
+  - material_id: dyed_dried_flower
+    name_cn: 染色干花
+    name_en: Dyed Dried Flower
+    category: botanical_special
+    visual_profile: {scale: variable, visual_strength: 3, morphology: {openness: variable, petal_density: variable, silhouette: fragmented, geometry: organic}, texture: {softness: dry, surface: rough_matte, richness: medium}, line_character: {type: branching_noise, directionality: medium}, physical_dna: {hardness: brittle, gravity: neutral, volume: airy}}
+    roles: [atmosphere, texture, accent, micro_information]
+    mood_tags: [dry, handmade, rough, archival]
+    natural_palette: [straw, brown, muted_green]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 5, gradient_dye: 4, edge_dye: 2, center_dye: 1, bleach: 5, metallic_spray: 5}
+    avoid_when: [fresh_watery]
+
+  - material_id: lace_flower
+    name_cn: 蕾丝花
+    name_en: Lace Flower
+    category: flower
+    visual_profile: {scale: small, visual_strength: 2, morphology: {openness: open, petal_density: micro_clustered, silhouette: umbrella_lace, geometry: branching}, texture: {softness: soft, surface: matte, richness: low}, line_character: {type: branching_lace, directionality: low}, physical_dna: {hardness: flexible, gravity: floating, volume: airy}}
+    roles: [atmosphere, air, light_point, transition]
+    mood_tags: [mist, lace, floating, quiet]
+    natural_palette: [white, cream, pale_green]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 4, gradient_dye: 4, edge_dye: 2, center_dye: 2, bleach: 2, metallic_spray: 2}
+    avoid_when: [hard_industrial]
+
+  - material_id: babys_breath
+    name_cn: 满天星
+    name_en: Baby's Breath
+    category: flower
+    visual_profile: {scale: tiny, visual_strength: 2, morphology: {openness: micro_open, petal_density: scattered, silhouette: cloud_points, geometry: branching}, texture: {softness: soft, surface: matte, richness: low}, line_character: {type: point_cloud, directionality: low}, physical_dna: {hardness: flexible, gravity: floating, volume: airy}}
+    roles: [atmosphere, light_point, micro_information, texture_noise]
+    mood_tags: [air, mist, scattered, delicate]
+    natural_palette: [white, cream]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 5, gradient_dye: 4, edge_dye: 1, center_dye: 1, bleach: 2, metallic_spray: 4}
+    avoid_when: [default_filler, dense_conventional]

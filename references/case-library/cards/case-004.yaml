@@ -1,0 +1,26 @@
+case_id: "004"
+title: "黑黄专辑封面感图 → 低调酷感型花艺"
+semantic_core: "黑色压住气场，让黄色像一张复古印刷封面般精准发声。"
+key_features: ["黑黄高对比", "低色数", "点阵印刷感", "竖向稳定", "成熟克制"]
+mapping:
+  flower: "少量黄色雕塑感主花承担被看见的亮色，深色花压住气场。"
+  branch: "少量竖向结构枝维持挺拔主轴。"
+  leaf_or_grass: "深色叶材负责重量与边界。"
+  wrapper: "黑黄大块硬纸承担封面切割。"
+  backboard: "平整黄黑色面建立竖立海报感。"
+  special_material: "点阵、打孔或重复纹理翻译印刷语言。"
+  negative_space: "低信息量、强轮廓，避免装饰填满。"
+structure: {silhouette: "中轴聚拢高挑海报型", height: "medium_high", width: "medium_narrow", density: "medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 2}
+palette:
+  mode: "opposition"
+  dominant: ["高明度黄", "黑色"]
+  secondary: ["灰白"]
+  accent: ["极少量暖深色"]
+  accent_behavior: "不扩张为第三色群。"
+  purity: 5
+  relationship: "黄色负责识别，黑色负责成熟与压制。"
+motion: {primary: "upward", secondary: "restrained_outward_edge", direction: "直立收束", strength: 2}
+physical_dna: {hardness: "hard", gravity: "neutral", material_identity: ["papery", "matte", "rough"]}
+key_rule: "低色数强对比图应保留颜色面积与权力关系，印刷纹理交给包装表面。"
+avoid: ["梦幻纱与珠光", "花材种类过多", "甜美圆团花", "把黄色铺满失去黑色压制"]
+retrieval_tags: ["黑黄", "专辑封面", "低色数", "高对比", "点阵", "复古印刷", "酷感", "竖向"]

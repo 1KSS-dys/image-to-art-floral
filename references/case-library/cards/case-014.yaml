@@ -1,0 +1,26 @@
+case_id: "014"
+title: "冷紫蓝幻想图 → 微光漂浮型花艺"
+semantic_core: "深夜里有一群柔软的冷色微光慢慢失重飘起。"
+key_features: ["深蓝紫夜空", "低饱和冷色亮部", "多个柔和焦点", "失重上浮", "雾与冰晶材质"]
+mapping:
+  flower: "浅紫、冰蓝和冷白花头组成多个微弱发光体。"
+  branch: "稀疏细线和外围悬枝承担慢慢上浮。"
+  leaf_or_grass: "灰蓝结构叶只做夜色中的冷影。"
+  wrapper: "深蓝与雾紫包装建立夜空和光层。"
+  backboard: "深蓝哑光星点板提供大面积暗空间。"
+  special_material: "半透明纱、白纤维、银灰网与极少细闪承担雾、冰晶和星尘。"
+  negative_space: "上部稀疏、花头方向错开，制造悬浮间隔。"
+structure: {silhouette: "柔性开放漂浮型", height: "medium_high", width: "medium_wide", density: "medium", center_of_gravity: "lower_middle", focus_architecture: "multi_focus", asymmetry: 3}
+palette:
+  mode: "layered_gradient"
+  dominant: ["深蓝紫", "夜空蓝"]
+  secondary: ["薰衣草紫", "雾紫", "浅冰蓝"]
+  accent: ["冷白", "珍珠白", "极少淡粉", "薄荷青"]
+  accent_behavior: "以多个低强度光点柔和浮现。"
+  purity: 4
+  relationship: "同一冷色世界中由暗夜向雾紫、冰白逐层发光。"
+motion: {primary: "floating", secondary: "slow_upward_drift", direction: "轻微向上并在外围悬停", strength: 2}
+physical_dna: {hardness: "soft", gravity: "weightless", material_identity: ["misty", "glossy", "textile", "synthetic"]}
+key_rule: "冷色梦境的透明感是雾化、失重和微光，不等于水体的湿润流动。"
+avoid: ["高饱和紫蓝撞色", "快速喷射或爆炸", "把淡粉扩大成甜美主色", "大量正面朝向的密实花头"]
+retrieval_tags: ["冷紫蓝", "夜梦", "微光", "失重", "漂浮", "多柔焦点", "冰晶", "幻想"]

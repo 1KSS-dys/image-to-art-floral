@@ -1,0 +1,26 @@
+case_id: "012"
+title: "青绿漂浮插画 → 漂流叙事型花艺"
+semantic_core: "几个暖色小岛在陌生的青绿色水域里安静漂流。"
+key_features: ["青绿大环境", "暖色中心岛", "元素彼此有距离", "白色翼状动作", "旧物般怪趣质感"]
+mapping:
+  flower: "棕橙圆润主花承担中心漂浮物，深红小点承担叙事碎片。"
+  branch: "纤细蓝绿枝材拉开漂流轨迹。"
+  leaf_or_grass: "染色灰青植物承担水面纹理和周边碎片。"
+  wrapper: "哑光青绿色包装承担陌生水域。"
+  backboard: "大面积水鸭绿平面稳定世界观。"
+  special_material: "白色羽毛感扇形材料承担飞鸟展开。"
+  negative_space: "元素之间保留水面式间隔和漂浮距离。"
+structure: {silhouette: "纵向开放漂浮装置型", height: "medium_high", width: "medium", density: "low_medium", center_of_gravity: "middle", focus_architecture: "dual_focus", asymmetry: 4}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["青绿色", "灰青", "水鸭绿"]
+  secondary: ["蓝绿", "深墨绿"]
+  accent: ["棕红", "铁锈橙", "白色"]
+  accent_behavior: "暖色形成被冷色包围的中等主体，白色负责一次翼状动作。"
+  purity: 4
+  relationship: "冷色环境包住暖色岛屿，白色在前景展开。"
+motion: {primary: "floating", secondary: "single_wing_opening", direction: "缓慢分散，局部向前展开", strength: 2}
+physical_dna: {hardness: "structured", gravity: "light", material_identity: ["dry", "rough", "papery", "organic"]}
+key_rule: "漂浮叙事依赖元素间距；白色材料应承担具体形态语义，而不是普通补白。"
+avoid: ["把所有元素密实堆成一团", "普通清新浪漫花束", "让暖色散成很多小点", "把鸟做成写实模型"]
+retrieval_tags: ["漂流", "青绿", "冷暖包裹", "插画叙事", "白鸟", "双焦点", "旧物感", "留白"]

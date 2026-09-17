@@ -1,0 +1,26 @@
+case_id: "011"
+title: "草地奔跑白裙人物 → 风中裙摆型花艺"
+semantic_core: "裙摆和草一起被同一阵风吹开。"
+key_features: ["奔跑人物是动作主体", "大面积白色飞扬曲面", "蓝绿白极简色块", "强横向风势", "整束结构共同受风"]
+mapping:
+  flower: "高挑白花承担人物身体与亮部。"
+  branch: "草材和细枝统一向左，承担风线与运动轨迹。"
+  leaf_or_grass: "绿色草材同时承担草坡和风。"
+  wrapper: "巨大柔软白色包装直接承担被吹开的裙摆。"
+  backboard: "蓝色硬板承担天空。"
+  special_material: "薄纤维纸和半透明边缘模拟布料轻盈。"
+  negative_space: "把重心留在右侧，左侧留出裙摆扫过的方向空间。"
+structure: {silhouette: "强横向动态型", height: "medium_high", width: "wide", density: "low", center_of_gravity: "right_lower", focus_architecture: "single_focus", asymmetry: 5}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["草绿色", "天空蓝"]
+  secondary: ["白色"]
+  accent: []
+  accent_behavior: "白色面积不最大但承担最高注意力。"
+  purity: 5
+  relationship: "蓝天和绿地是环境，白色成为横向运动主体。"
+motion: {primary: "directional", secondary: "wind_sweep", direction: "强烈向左横扫", strength: 5}
+physical_dna: {hardness: "soft", gravity: "light", material_identity: ["textile", "organic", "papery"]}
+key_rule: "强风不是装饰；它必须同时改变枝材、包装、轮廓、重心与留白。"
+avoid: ["只加飘带表现风", "用白花直接代替整个裙摆", "蓝白绿传统圆形花束", "左右均衡"]
+retrieval_tags: ["奔跑", "白裙", "风", "横向动势", "包装主角", "人物动态", "蓝天草地", "高不对称"]

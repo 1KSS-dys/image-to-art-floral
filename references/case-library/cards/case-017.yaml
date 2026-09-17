@@ -1,0 +1,26 @@
+case_id: "017"
+title: "橙黄向日葵幻想图 → 超现实田野型花艺"
+semantic_core: "普通向日葵田被明亮橙色天空推入一个略显荒诞的梦。"
+key_features: ["橙黄大环境", "向日葵真实自然层", "白色漂浮云团", "黑色压住甜度", "自然与超现实并置"]
+mapping:
+  flower: "向日葵和暖黄花材承担稳定花田，少量异形花保留怪趣。"
+  branch: "向上枝叶承担田野生长。"
+  leaf_or_grass: "草绿与橄榄绿建立下层自然地面。"
+  wrapper: "橙黄大块纸承担过亮的幻想天空。"
+  backboard: "黑色外层和黄橙平面共同建立舞台张力。"
+  special_material: "棉花承担云，纤维网格承担蜂群或蜂巢式幻想结构。"
+  negative_space: "在密实花田与轻盈天空之间保留分层。"
+structure: {silhouette: "景观式平面装置型", height: "medium", width: "medium", density: "medium_high", center_of_gravity: "lower_middle", focus_architecture: "environment_dominant", asymmetry: 3}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["向日葵黄", "金黄", "蜜橙"]
+  secondary: ["草绿", "橄榄绿"]
+  accent: ["黑色", "深棕", "白色"]
+  accent_behavior: "黑色压住普通田园感，白色只在上层漂浮。"
+  purity: 3
+  relationship: "暖黄橙统领环境，绿色承地，黑色加怪异，白色制造幻想。"
+motion: {primary: "floating", secondary: "grounded_upward_growth", direction: "下层稳定，上层悬停", strength: 2}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["organic", "papery", "dry", "synthetic"]}
+key_rule: "风景中真实自然层与超现实层应由不同载体承担，不能退化成普通主题花束。"
+avoid: ["普通向日葵礼物花束", "删掉黑色使画面只剩阳光田园", "把棉花当无语义填充", "上下两层同样密实"]
+retrieval_tags: ["向日葵", "超现实", "田野", "橙黄", "漂浮云", "自然幻想", "上下分层", "怪趣"]

@@ -1,0 +1,6 @@
+interface:
+  display_name: "图片→艺术花艺"
+  short_description: "先解码图片视觉语言，再生成纯白背景下的一束完整艺术花艺"
+  default_prompt: "Use $image-to-art-floral to translate this image's visual language into one complete artistic floral arrangement."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,26 @@
+case_id: "018"
+title: "紫银机械角色图 → 赛博骨架型花艺"
+semantic_core: "植物像机械一样生长，逐段展开紫银外骨骼。"
+key_features: ["银灰机械外壳", "紫色结构网络", "橙色能量节点", "线性材料多于花朵", "尖锐折线延展"]
+mapping:
+  flower: "低位紫灰花群承担机械心脏，橙色小点承担能量节点。"
+  branch: "紫色硬枝与折线承担外骨骼和关节展开。"
+  leaf_or_grass: "长剑叶、棕榈叶和刺状干材承担刀片结构。"
+  wrapper: "银色镜面或皱银包装承担机械外壳。"
+  backboard: "银灰与橙色硬板建立金属基底和能量面。"
+  special_material: "金属丝、银灰网和硬质干花承担线缆与关节。"
+  negative_space: "线与线之间留出骨架间隙，避免花球化。"
+structure: {silhouette: "纵向非对称机械骨架型", height: "high", width: "medium", density: "low_medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 5}
+palette:
+  mode: "dominant_single_accent"
+  dominant: ["银灰", "金属灰", "冷紫", "蓝紫"]
+  secondary: ["黑色"]
+  accent: ["橙色", "橘红"]
+  accent_behavior: "严格限制为少量节点，不扩大为主花群。"
+  purity: 4
+  relationship: "低饱和金属基底上生长紫色结构，橙色像能量接口。"
+motion: {primary: "mechanical_extension", secondary: "upward_tension", direction: "向上与向右多段折线伸展", strength: 4}
+physical_dna: {hardness: "mechanical", gravity: "neutral", material_identity: ["metallic", "synthetic", "glossy", "dry"]}
+key_rule: "结构优先型图像必须先保住硬度、骨架与延展逻辑，颜色正确但仍柔软也算失败。"
+avoid: ["大量柔软鲜花", "普通紫色花束", "把橙色放大成主色", "自然柔曲线", "填满骨架空隙"]
+retrieval_tags: ["机械角色", "外骨骼", "紫银", "赛博", "结构优先", "机械延展", "能量节点", "高不对称"]

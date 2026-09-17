@@ -1,0 +1,26 @@
+case_id: "010"
+title: "蓝天草地风景画 → 风感景观型花艺"
+semantic_core: "一个很小的人站在一片很大的风景里，整束花里有风经过。"
+key_features: ["天空草地垂直分层", "环境远大于人物", "横向风痕", "纯白小叙事焦点", "开阔低密度"]
+mapping:
+  flower: "蓝色大花参与天空层，一朵纯白花承担远处小人物。"
+  branch: "芒草与细枝承担地平线、风痕和横向扫动。"
+  leaf_or_grass: "灰绿与草绿材料建立低位地面。"
+  wrapper: "半透明蓝绿层连接天空与草地。"
+  backboard: "大面积哑光深蓝板承担天空和远景。"
+  special_material: "不同粗细的天然纤维线条翻译绘画笔触。"
+  negative_space: "扩大天空与风的空间，让白色人物保持很小。"
+structure: {silhouette: "开阔扇形景观型", height: "medium_high", width: "medium_wide", density: "low_medium", center_of_gravity: "lower", focus_architecture: "environment_dominant", asymmetry: 4}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["深钴蓝", "天空蓝"]
+  secondary: ["草绿", "灰绿色", "米白", "稻草色"]
+  accent: ["纯白", "极少量淡粉"]
+  accent_behavior: "纯白虽小但保留叙事权重，淡粉只柔化。"
+  purity: 4
+  relationship: "蓝天与绿地上下分区，米白风线贯穿，白色人物孤立。"
+motion: {primary: "directional", secondary: "upward_growth", direction: "横向向右扫并向外扬", strength: 4}
+physical_dna: {hardness: "flexible", gravity: "light", material_identity: ["organic", "papery", "matte", "textile"]}
+key_rule: "风景图先搭空间层级，再安放叙事主体；环境尺度不能被主花反客为主。"
+avoid: ["把白色人物做成最大主花", "草材方向不统一", "压缩天空留白", "做成普通蓝绿圆花束"]
+retrieval_tags: ["风景", "蓝天草地", "环境主导", "小人物", "风", "空间分层", "景观型", "低密度"]

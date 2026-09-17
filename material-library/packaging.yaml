@@ -1,0 +1,42 @@
+version: "1.2"
+purpose: "Packaging carrier families mapped directly to Carrier Physical Attributes. Select one variant and preserve its physical behavior."
+materials:
+  - material_id: paper_carrier_family
+    name_cn: 纸质载体家族
+    name_en: Paper Carrier Family
+    category: packaging
+    variants: [cardstock, art_paper, handmade_paper, kraft_paper, printed_paper, torn_edge_paper]
+    visual_profile: {scale: variable, visual_strength: 5, morphology: {openness: planar_or_folded, silhouette: sheet, geometry: planar_folded_fragmented}, texture: {softness: firm, surface: matte_printed_handmade, richness: variable}, line_character: {type: edge_and_fold, directionality: medium}, physical_dna: {hardness: structured, gravity: neutral, volume: planar}}
+    carrier_physical: {material: paper_or_cardstock, hardness: structured, opacity: opaque, surface: matte_printed_or_handmade, geometry: planar_folded_or_fragmented}
+    roles: [wrapper, backboard, environment, typography_carrier, structure]
+    mood_tags: [graphic, handmade, editorial, rough, archival]
+    natural_palette: [white, cream, kraft, gray]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 5, bleach: 3, metallic_spray: 5}
+    avoid_when: [transparent_flowing_required]
+
+  - material_id: textile_carrier_family
+    name_cn: 织物载体家族
+    name_en: Textile Carrier Family
+    category: packaging
+    variants: [ribbon, cotton_fabric, mesh_fabric, velvet, tulle]
+    visual_profile: {scale: variable, visual_strength: 4, morphology: {openness: flowing_or_wrapped, silhouette: drape, geometry: folded_layered}, texture: {softness: soft_flexible, surface: woven_matte_or_plush, richness: high}, line_character: {type: fold_and_trail, directionality: medium_strong}, physical_dna: {hardness: soft_or_flexible, gravity: draping, volume: layered}}
+    carrier_physical: {material: fabric, hardness: soft_or_flexible, opacity: translucent_to_opaque, surface: textured_or_matte, geometry: flowing_folded_layered}
+    roles: [wrapper, ribbon, enclosure, atmosphere, color_field]
+    mood_tags: [textile, draped, tactile, soft, layered]
+    natural_palette: [white, cream, black, variable]
+    treatment_tolerance: {absorption_dye: 5, spray_dye: 4, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 4, metallic_spray: 3}
+    avoid_when: [hard_planar_required]
+
+  - material_id: transparent_wrapper_family
+    name_cn: 透明包装载体家族
+    name_en: Transparent Wrapper Family
+    category: packaging
+    variants: [translucent_film, clear_wrap_film, organza, mesh_fabric]
+    variants_cn: [半透明膜, 透明包装膜, 欧根纱, 网状织物]
+    visual_profile: {scale: variable, visual_strength: 4, morphology: {openness: wrapped_or_layered, silhouette: veil_band, geometry: flowing_folded_layered}, texture: {softness: flexible, surface: smooth_or_woven, richness: low}, line_character: {type: fold_edge_and_band, directionality: medium}, physical_dna: {hardness: flexible, gravity: draping, volume: translucent_layer}}
+    carrier_physical: {material: film_or_organza, hardness: flexible, opacity: transparent_or_translucent, surface: smooth_or_textured, geometry: flowing_folded_layered}
+    roles: [wrapper, enclosure, environment, color_field, atmosphere]
+    mood_tags: [transparent, layered, misty, flowing, synthetic]
+    natural_palette: [clear, white, translucent_gray]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 1, metallic_spray: 4}
+    avoid_when: [opaque_rigid_required]

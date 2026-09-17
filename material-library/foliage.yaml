@@ -1,0 +1,81 @@
+version: "1.2"
+purpose: "Structural and planar foliage families; choose the named variant that fits the required physical behavior."
+materials:
+  - material_id: palm_foliage_family
+    name_cn: 棕榈叶材家族
+    name_en: Palm Foliage Family
+    category: foliage
+    variants: [蒲葵, 散尾葵]
+    visual_profile: {scale: very_large, visual_strength: 5, morphology: {openness: fan_or_feather, silhouette: radial_fan, geometry: architectural}, texture: {softness: firm, surface: ribbed_matte, richness: high}, line_character: {type: radiating_blades, directionality: strong}, physical_dna: {hardness: structured, gravity: neutral, volume: planar_full}}
+    structure: {planar: high, linear: high, rigidity: 4, surface_area: large, curvature: medium, suitable_roles: [structure, motion, environment, hero_material]}
+    roles: [structure, motion, environment, hero_material]
+    mood_tags: [tropical, graphic, architectural, sweeping]
+    natural_palette: [green, deep_green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 4, edge_dye: 4, center_dye: 3, bleach: 4, metallic_spray: 5}
+    avoid_when: [tiny_delicate]
+
+  - material_id: tropical_planar_foliage
+    name_cn: 大型平面热带叶家族
+    name_en: Large Planar Tropical Foliage
+    category: foliage
+    variants: [龟背叶, 大型硬质热带叶]
+    visual_profile: {scale: very_large, visual_strength: 5, morphology: {openness: planar, silhouette: shield_or_cutout, geometry: graphic}, texture: {softness: firm, surface: glossy_or_matte, richness: medium}, line_character: {type: planar_mass, directionality: medium}, physical_dna: {hardness: hard, gravity: neutral, volume: planar}}
+    structure: {planar: very_high, linear: low, rigidity: 5, surface_area: very_large, curvature: low_medium, suitable_roles: [structure, hero_material, backboard, environment]}
+    roles: [structure, hero_material, backboard, environment]
+    mood_tags: [architectural, tropical, graphic, monumental]
+    natural_palette: [green, deep_green]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 4, metallic_spray: 5}
+    avoid_when: [weightless_mist]
+
+  - material_id: sword_blade_foliage
+    name_cn: 剑叶家族
+    name_en: Sword Blade Foliage
+    category: foliage
+    variants: [剑叶, 鸢尾叶]
+    visual_profile: {scale: long, visual_strength: 4, morphology: {openness: linear, silhouette: blade, geometry: angular}, texture: {softness: firm, surface: smooth_matte, richness: low}, line_character: {type: long_blade, directionality: very_strong}, physical_dna: {hardness: structured_flexible, gravity: directional, volume: flat_linear}}
+    structure: {planar: medium, linear: very_high, rigidity: 4, surface_area: medium, curvature: low_medium, suitable_roles: [structure, motion, mechanical_extension]}
+    roles: [structure, motion, mechanical_extension]
+    mood_tags: [sharp, directional, clean, mechanical]
+    natural_palette: [green, blue_green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 3, bleach: 4, metallic_spray: 5}
+    avoid_when: [soft_round_only]
+
+  - material_id: silver_branching_foliage
+    name_cn: 银色分枝叶材家族
+    name_en: Silver Branching Foliage
+    category: foliage
+    variants: [银叶, 尤加利]
+    visual_profile: {scale: medium, visual_strength: 3, morphology: {openness: branching, silhouette: coin_or_lance_points, geometry: rhythmic}, texture: {softness: medium, surface: powdery_matte, richness: medium}, line_character: {type: articulated_branch, directionality: medium}, physical_dna: {hardness: flexible, gravity: neutral, volume: airy_medium}}
+    structure: {planar: low, linear: medium, rigidity: 2, surface_area: medium, curvature: medium, suitable_roles: [support, atmosphere, transition, line]}
+    roles: [support, atmosphere, transition, line]
+    mood_tags: [misty, muted, powdery, calm]
+    natural_palette: [silver_green, blue_green, muted_green]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 4, edge_dye: 3, center_dye: 2, bleach: 5, metallic_spray: 5}
+    avoid_when: [high_purity_without_reason]
+
+  - material_id: processed_foliage
+    name_cn: 处理叶材家族
+    name_en: Processed Foliage Family
+    category: foliage
+    variants: [染色叶, 骨架叶, 枯叶]
+    visual_profile: {scale: variable, visual_strength: 4, morphology: {openness: planar_or_lattice, silhouette: fragmented_leaf, geometry: organic_structural}, texture: {softness: dry_firm, surface: matte_or_veined, richness: high}, line_character: {type: vein_or_fragment, directionality: medium}, physical_dna: {hardness: structured_brittle, gravity: neutral, volume: planar_airy}}
+    structure: {planar: high, linear: medium, rigidity: 4, surface_area: medium_large, curvature: variable, suitable_roles: [structure, atmosphere, texture, accent, environment]}
+    roles: [structure, atmosphere, texture, accent, environment]
+    mood_tags: [dry, skeletal, dyed, rough, archival]
+    natural_palette: [brown, straw, muted_green]
+    treatment_tolerance: {absorption_dye: 4, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 3, bleach: 5, metallic_spray: 5}
+    avoid_when: [fresh_natural_only]
+
+  - material_id: linear_grass_family
+    name_cn: 长线型草叶家族
+    name_en: Long Linear Grass Family
+    category: foliage
+    variants: [钢草, 长线型草叶]
+    visual_profile: {scale: very_long, visual_strength: 4, morphology: {openness: linear, silhouette: thread_or_blade, geometry: linear}, texture: {softness: firm_flexible, surface: smooth, richness: low}, line_character: {type: long_curve, directionality: very_strong}, physical_dna: {hardness: flexible, gravity: bending, volume: minimal}}
+    line: {length: long, curvature: high, flexibility: flexible, directionality: strong, motion_fit: [wind, flowing, downward, sweeping, centripetal]}
+    structure: {planar: low, linear: very_high, rigidity: 3, surface_area: low, curvature: high, suitable_roles: [motion, structure, line, negative_space_boundary]}
+    roles: [motion, structure, line, negative_space_boundary]
+    mood_tags: [wind, sweep, calligraphic, tensile]
+    natural_palette: [green, deep_green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 3, center_dye: 2, bleach: 4, metallic_spray: 5}
+    avoid_when: [dense_mass_only]

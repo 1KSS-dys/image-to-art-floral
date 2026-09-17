@@ -1,0 +1,26 @@
+case_id: "021"
+title: "蓝色角色视觉 → 单色沉浸型 + 异色破局花艺"
+semantic_core: "冷蓝秩序完整建立后，唯一的红色情绪突然不听话。"
+key_features: ["高纯度蓝色世界", "深浅蓝形态层级", "白色呼吸点", "唯一红色异常焦点", "安静角色与隐藏危险"]
+mapping:
+  flower: "深中浅蓝不同花型建立角色世界，白花承担衬衫、冷光和停顿。"
+  branch: "高挑蓝色花序承担修长人物比例和向上秩序。"
+  leaf_or_grass: "蓝色刺状花和冷色叶承担理性中的锐边。"
+  wrapper: "深蓝、皇家蓝硬纸承担制服和室内冷色空间。"
+  backboard: "纯净蓝色大面加强单色沉浸。"
+  special_material: "右侧单一红色异形花承担隐藏情绪和破局。"
+  negative_space: "白色花与蓝色层级之间留出克制呼吸，红色周围保持孤立。"
+structure: {silhouette: "纵向偏高中部丰满", height: "high", width: "medium", density: "medium_high", center_of_gravity: "middle", focus_architecture: "single_focus", asymmetry: 3}
+palette:
+  mode: "dominant_single_accent"
+  dominant: ["深蓝", "皇家蓝", "钴蓝", "宝蓝", "冰蓝"]
+  secondary: ["纯白", "冷白", "蓝黑"]
+  accent: ["猩红", "橙红"]
+  accent_behavior: "只允许一处红色例外，不复制扩散。"
+  purity: 5
+  relationship: "单色明度与花型建立丰富度，唯一异色作为失控信号。"
+motion: {primary: "upward", secondary: "radial_micro_spikes_and_side_burst", direction: "上部拉高，中部稳定，右侧突发", strength: 3}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["matte", "papery", "synthetic", "glossy"]}
+key_rule: "单色丰富度优先来自明度、形态与材质；若异色承担异常，就必须限制位置和数量。"
+avoid: ["加入紫绿黄粉丰富色盘", "把红色扩大为第二主色", "所有蓝色同一明度", "只用蓝玫瑰堆满", "分散多个红色点"]
+retrieval_tags: ["蓝色角色", "单色沉浸", "异色破局", "高纯度色盘", "唯一红点", "角色气质", "克制", "向上"]

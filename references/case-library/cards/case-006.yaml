@@ -1,0 +1,26 @@
+case_id: "006"
+title: "深蓝专辑视觉 → 冷感夜色型花艺"
+semantic_core: "冷光从深蓝夜色里缓慢浮起，同时被一股黑色重量向下拉。"
+key_features: ["深蓝单色层级", "黑色压重", "冰蓝冷光", "上升与下坠对抗", "夜色孤独感"]
+mapping:
+  flower: "冰蓝和冷白大型花承担从黑暗中浮出的冷光。"
+  branch: "高挑蓝色枝材建立向上挣脱。"
+  leaf_or_grass: "蓝黑叶材负责暗部与重量。"
+  wrapper: "深钴蓝、靛蓝和黑色粗纹理纸承担夜色。"
+  backboard: "深蓝大色面扩大沉浸空间。"
+  special_material: "一组黑色垂坠材料承担忧郁下沉。"
+  negative_space: "高挑线条和垂坠之间保留深色间隔。"
+structure: {silhouette: "纵向雕塑型", height: "high", width: "medium_narrow", density: "low_medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 4}
+palette:
+  mode: "monochrome"
+  dominant: ["深钴蓝", "靛蓝", "墨蓝"]
+  secondary: ["黑色", "蓝黑色"]
+  accent: ["冰蓝", "冷白"]
+  accent_behavior: "从暗部逐级浮出，不成为独立色块。"
+  purity: 5
+  relationship: "黑蓝到冰蓝的单色明度层级。"
+motion: {primary: "upward", secondary: "downward_drag", direction: "上升与侧部下坠并存", strength: 3}
+physical_dna: {hardness: "structured", gravity: "heavy", material_identity: ["matte", "papery", "dry"]}
+key_rule: "同为蓝色体系，也要先区分夜色的深度、水的透明和梦境的微光。"
+avoid: ["透明糖果水感", "粉嫩丝带", "所有蓝色同一明度", "只向上生长而缺少下坠重量"]
+retrieval_tags: ["深蓝", "夜色", "单色", "冷光", "上升", "下坠", "孤独", "专辑"]

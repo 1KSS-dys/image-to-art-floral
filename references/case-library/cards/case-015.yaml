@@ -1,0 +1,26 @@
+case_id: "015"
+title: "黑红赛车头盔视觉 → 竞技机械型花艺"
+semantic_core: "红色速度从黑色机械外壳中向前冲出。"
+key_features: ["碳黑机械底盘", "性能红速度线", "少量银白标识感", "前向加速", "锐利高压缩结构"]
+mapping:
+  flower: "一至两朵红色锐利主花承担高速能量核。"
+  branch: "长条黑红枝材承担速度线和前冲轨迹。"
+  leaf_or_grass: "深色刀片叶承担机械切面。"
+  wrapper: "黑色硬挺包装承担头盔外壳与底盘。"
+  backboard: "少量白银平面提供赛车编号般的锐利信息层。"
+  special_material: "银灰金属纸、半亮漆面和细白线承担性能材质。"
+  negative_space: "沿推进方向切出窄长空隙，避免圆润平均。"
+structure: {silhouette: "锐利纵向前冲型", height: "medium_high", width: "medium_narrow", density: "medium_high", center_of_gravity: "middle", focus_architecture: "single_focus", asymmetry: 4}
+palette:
+  mode: "opposition"
+  dominant: ["黑色", "碳黑"]
+  secondary: ["赛车红"]
+  accent: ["白色", "银白"]
+  accent_behavior: "白银只作短促标识，不扩大成第三主色。"
+  purity: 5
+  relationship: "黑色压住机械重量，红色承担推进，银白负责瞬时锐光。"
+motion: {primary: "directional", secondary: "forward_acceleration", direction: "向前并向上冲", strength: 5}
+physical_dna: {hardness: "mechanical", gravity: "heavy", material_identity: ["metallic", "glossy", "synthetic"]}
+key_rule: "竞技题材要转译速度、性能和结构压力，不要只复制黑红品牌配色。"
+avoid: ["头盔造型花束", "浪漫或哥特红黑", "纱和牛皮纸", "圆润平均分布", "白色比例过高"]
+retrieval_tags: ["赛车", "竞技", "速度", "机械", "黑红", "前冲", "性能感", "锐利"]

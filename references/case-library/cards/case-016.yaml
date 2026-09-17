@@ -1,0 +1,26 @@
+case_id: "016"
+title: "秋日人物写真 → 复古生活方式型花艺"
+semantic_core: "人物被秋天的色彩与柔软厚实的穿搭质地包住。"
+key_features: ["驼色奶咖大环境", "焦糖与酒红焦点", "呢料皮革触感", "稳定生活方式气质", "一处冷色透气孔"]
+mapping:
+  flower: "奶咖、焦糖和酒红花材承担秋季穿搭层次。"
+  branch: "少量自然枝叶维持安静呼吸。"
+  leaf_or_grass: "暗绿与灰绿承担秋季环境。"
+  wrapper: "哑光卡其与粗纹理纸承担驼色大衣。"
+  backboard: "宽肩式棕色平面建立编辑静物构图。"
+  special_material: "苹果、干燥植物和木质元素承担秋日生活叙事。"
+  negative_space: "极少量浅蓝或青绿作为暖色世界的透气孔。"
+structure: {silhouette: "稳定宽肩编辑静物型", height: "medium_high", width: "medium_wide", density: "medium_high", center_of_gravity: "lower_middle", focus_architecture: "multi_focus", asymmetry: 3}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["驼色", "奶咖", "卡其棕"]
+  secondary: ["焦糖棕", "砖红", "酒红", "暗绿"]
+  accent: ["极少量浅蓝", "青绿"]
+  accent_behavior: "只开一个冷色透气孔，避免全棕发闷。"
+  purity: 3
+  relationship: "暖中性色大面积包裹深暖焦点，微量冷色松开空气。"
+motion: {primary: "static", secondary: "natural_upward_breathing", direction: "稳定落地，少量向上", strength: 1}
+physical_dna: {hardness: "soft", gravity: "heavy", material_identity: ["textile", "matte", "dry", "organic", "rough"]}
+key_rule: "生活方式人物图应提取穿搭的颜色、季节和触感；具象果实只有承担多重语义时才进入。"
+avoid: ["只做棕花加牛皮纸", "强行动势", "甜美透明包装", "冷色跳点过多", "无语义装饰水果"]
+retrieval_tags: ["秋日", "穿搭", "生活方式", "驼色", "复古", "触感", "果实", "静态"]

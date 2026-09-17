@@ -1,0 +1,26 @@
+case_id: "007"
+title: "海水人物专辑感图 → 波浪包裹型花艺"
+semantic_core: "海水一层层轻轻吞没人物，白色主体从波浪中浮出。"
+key_features: ["蓝白分层渐变", "横向波浪", "人物被海包裹", "褶皱纸质水面", "安静轻忧郁"]
+mapping:
+  flower: "白色花群承担人物、裙摆和海面亮部，并从包装内部探出。"
+  branch: "少量上升枝材承担从水下浮出的生命。"
+  leaf_or_grass: "低存在感冷绿只做深度连接。"
+  wrapper: "白、浅蓝到深蓝的波纹层承担整片海。"
+  backboard: "分层蓝色大面建立水深与边界。"
+  special_material: "褶皱纸和半透明边缘承担柔软浪面。"
+  negative_space: "在层层包装之间保留水位间隔，花材藏而不满。"
+structure: {silhouette: "高外轮廓横向分层包裹型", height: "medium_high", width: "medium_wide", density: "low_medium", center_of_gravity: "lower_middle", focus_architecture: "environment_dominant", asymmetry: 3}
+palette:
+  mode: "layered_gradient"
+  dominant: ["白色", "浅雾蓝", "海水蓝"]
+  secondary: ["中蓝", "深海蓝"]
+  accent: ["极少量淡黄", "灰色"]
+  accent_behavior: "只作自然花心与灰阶过渡。"
+  purity: 5
+  relationship: "从高明度白蓝向深海蓝逐层沉降。"
+motion: {primary: "wave", secondary: "upward_emergence", direction: "横向起伏并轻微向上", strength: 2}
+physical_dna: {hardness: "flexible", gravity: "light", material_identity: ["watery", "papery", "textile", "misty"]}
+key_rule: "当环境包住人物时，让包装包住花；先建立海，再让主体从海里长出来。"
+avoid: ["普通蓝白配色花束", "透明塑料式直白水滴", "大量外扩枝条", "把花放满波浪层"]
+retrieval_tags: ["海水", "波浪", "包裹", "分层", "蓝白", "人物氛围", "褶皱纸", "轻忧郁"]

@@ -1,0 +1,26 @@
+case_id: "008"
+title: "涂鸦夜景专辑图 → 高信息量装置型花艺"
+semantic_core: "夜色像一页立体日记，被颜色、文字感和小事件不断写满。"
+key_features: ["深蓝绿背景", "多点高饱和彩色信号", "拼贴涂鸦", "多方向弹跳", "高信息量但有主轴"]
+mapping:
+  flower: "蓝绿主体花稳定画面，橙、粉、黄绿异形花成为分散小事件。"
+  branch: "方向不同的线性花材承担手绘跳线和随性节奏。"
+  leaf_or_grass: "深绿叶材建立底盘并连接彩色点。"
+  wrapper: "深绿包装承载背景下部和结构稳定。"
+  backboard: "深蓝手绘或拼贴板承担夜色与涂鸦界面。"
+  special_material: "贴纸、卡纸、手写线条和粗纹理表面承担 DIY 语言。"
+  negative_space: "在小事件之间留出间隔，同时保留清晰主轴。"
+structure: {silhouette: "不规则扇形装置型", height: "medium_high", width: "medium_wide", density: "medium_high", center_of_gravity: "lower_middle", focus_architecture: "distributed_focus", asymmetry: 4}
+palette:
+  mode: "dominant_multi_accent"
+  dominant: ["深蓝", "靛蓝", "深绿", "青绿"]
+  secondary: ["橙色", "玫红"]
+  accent: ["荧光黄绿", "少量紫色"]
+  accent_behavior: "像多个独立信号在深色背景上跳出。"
+  purity: 2
+  relationship: "稳定深色大背景加多个不平均的高饱和彩色事件。"
+motion: {primary: "directional", secondary: "multi_directional_bounce", direction: "多方向跳出但受中轴约束", strength: 4}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["papery", "matte", "rough", "synthetic"]}
+key_rule: "高信息量图可以增加装饰，但必须区分稳定背景、主事件与分散小信号。"
+avoid: ["把多色平均分配", "没有主轴的随机凌乱", "将每个涂鸦符号具象复制", "做成单一橙色焦点"]
+retrieval_tags: ["涂鸦", "拼贴", "多点焦点", "高信息量", "夜景", "DIY", "多方向", "青春"]

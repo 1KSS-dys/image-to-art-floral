@@ -1,0 +1,26 @@
+case_id: "001"
+title: "泳池水感图 → 清透流动型花艺"
+semantic_core: "一个人被阳光照亮的水体包裹，安静地漂浮。"
+key_features: ["薄荷青绿水光", "透明与波纹", "环境大于人物", "低密度留白", "缓慢漂浮"]
+mapping:
+  flower: "白色与浅青绿舒展花头承担水面亮光和纯净主体。"
+  branch: "细长上升枝材承担从水中浮出的植物与光影。"
+  leaf_or_grass: "深绿轻叶承担深水和岸边阴影。"
+  wrapper: "大面积半透明青绿褶皱包装承担水体主体。"
+  backboard: "浅青绿雾面层提供被包裹的环境底色。"
+  special_material: "透明薄膜和不规则反光边缘承担波纹。"
+  negative_space: "上疏下稳，保留人物很小、环境很大的呼吸感。"
+structure: {silhouette: "高挑不对称包裹型", height: "medium_high", width: "medium_wide", density: "low_medium", center_of_gravity: "lower", focus_architecture: "environment_dominant", asymmetry: 3}
+palette:
+  mode: "layered_gradient"
+  dominant: ["薄荷青绿", "湖水蓝绿"]
+  secondary: ["白色", "浅青蓝"]
+  accent: ["深橄榄绿", "深水墨绿"]
+  accent_behavior: "局部压深水域，不形成新主色。"
+  purity: 4
+  relationship: "高明度冷色大环境由透明材质承载，深绿只压住局部。"
+motion: {primary: "wave", secondary: "upward_floating", direction: "向上，并向右下柔和扩散", strength: 2}
+physical_dna: {hardness: "flexible", gravity: "light", material_identity: ["watery", "glossy", "misty", "organic"]}
+key_rule: "当环境氛围比主体更重要时，让包装和空间承担环境，不要把主色全部塞进花朵。"
+avoid: ["密实圆形花球", "泳圈或贝壳等直白符号", "厚重全哑光包装", "高饱和暖色"]
+retrieval_tags: ["水感", "透明", "泳池", "环境主导", "包裹", "波纹", "漂浮", "低密度"]

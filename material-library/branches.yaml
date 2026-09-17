@@ -1,0 +1,63 @@
+version: "1.2"
+purpose: "Line and motion carriers; use branches to construct trajectories rather than treating flower heads as the only motion device."
+materials:
+  - material_id: weeping_willow
+    name_cn: 垂柳枝
+    name_en: Weeping Willow Branch
+    category: branch
+    visual_profile: {scale: very_long, visual_strength: 4, morphology: {openness: cascading, silhouette: curtain_lines, geometry: organic_linear}, texture: {softness: flexible, surface: matte, richness: low}, line_character: {type: downward_arc, directionality: very_strong}, physical_dna: {hardness: flexible, gravity: falling, volume: airy}}
+    line: {length: long, curvature: high, flexibility: flexible, directionality: strong, motion_fit: [downward, flowing, sweeping, centripetal]}
+    roles: [motion, structure, negative_space_boundary]
+    mood_tags: [falling, soft, melancholic, flowing]
+    natural_palette: [green, brown]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 4, edge_dye: 1, center_dye: 1, bleach: 4, metallic_spray: 5}
+    avoid_when: [rigid_vertical]
+
+  - material_id: spirea_branch
+    name_cn: 雪柳
+    name_en: Spirea Branch
+    category: branch
+    visual_profile: {scale: long, visual_strength: 3, morphology: {openness: branching, silhouette: dotted_arc, geometry: organic_linear}, texture: {softness: flexible, surface: matte, richness: medium}, line_character: {type: branching_arc, directionality: strong}, physical_dna: {hardness: flexible, gravity: floating, volume: airy}}
+    line: {length: long, curvature: high, flexibility: flexible, directionality: strong, motion_fit: [wind, flowing, floating, sweeping]}
+    roles: [motion, atmosphere, structure, light_point]
+    mood_tags: [spring, airy, dotted, sweeping]
+    natural_palette: [white, green, brown]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 4, gradient_dye: 4, edge_dye: 1, center_dye: 1, bleach: 3, metallic_spray: 3}
+    avoid_when: [heavy_monolithic]
+
+  - material_id: curly_willow
+    name_cn: 龙柳
+    name_en: Curly Willow
+    category: branch
+    visual_profile: {scale: very_long, visual_strength: 5, morphology: {openness: skeletal, silhouette: twisting_line, geometry: irregular_linear}, texture: {softness: hard, surface: rough, richness: medium}, line_character: {type: corkscrew_curve, directionality: strong}, physical_dna: {hardness: structured, gravity: neutral, volume: open}}
+    line: {length: long, curvature: very_high, flexibility: structured, directionality: strong, motion_fit: [wave, collision, centripetal, mechanical_extension]}
+    roles: [structure, motion, hero_material]
+    mood_tags: [twisted, skeletal, tense, calligraphic]
+    natural_palette: [brown, tan, green]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 4, edge_dye: 1, center_dye: 1, bleach: 5, metallic_spray: 5}
+    avoid_when: [soft_cloud_only]
+
+  - material_id: processed_branch
+    name_cn: 处理枝材家族
+    name_en: Processed Branch Family
+    category: branch
+    variants: [枯枝, 染色枝]
+    visual_profile: {scale: long, visual_strength: 4, morphology: {openness: skeletal, silhouette: forked_line, geometry: angular_organic}, texture: {softness: hard, surface: rough_matte, richness: medium}, line_character: {type: fractured_or_forked, directionality: strong}, physical_dna: {hardness: hard, gravity: neutral, volume: open}}
+    line: {length: long, curvature: low_variable, flexibility: rigid, directionality: strong, motion_fit: [mechanical_extension, collision, radial_outward, downward]}
+    roles: [structure, motion, texture, accent]
+    mood_tags: [dry, rough, industrial, fragmented]
+    natural_palette: [brown, gray, black]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 2, center_dye: 1, bleach: 5, metallic_spray: 5}
+    avoid_when: [tender_fresh_only]
+
+  - material_id: vine
+    name_cn: 藤蔓
+    name_en: Vine
+    category: branch
+    visual_profile: {scale: long, visual_strength: 3, morphology: {openness: looping, silhouette: trailing_curve, geometry: organic_linear}, texture: {softness: flexible, surface: natural_matte, richness: low}, line_character: {type: looping_curve, directionality: strong}, physical_dna: {hardness: flexible, gravity: trailing, volume: minimal}}
+    line: {length: long, curvature: very_high, flexibility: flexible, directionality: strong, motion_fit: [flowing, downward, sweeping, wrapped, centripetal]}
+    roles: [motion, structure, enclosure, negative_space_boundary]
+    mood_tags: [flowing, entangling, organic, trailing]
+    natural_palette: [green, brown]
+    treatment_tolerance: {absorption_dye: 3, spray_dye: 5, gradient_dye: 4, edge_dye: 1, center_dye: 1, bleach: 4, metallic_spray: 4}
+    avoid_when: [strict_planar]

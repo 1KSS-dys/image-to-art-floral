@@ -1,0 +1,26 @@
+case_id: "003"
+title: "粉蓝梦幻专辑感图 → 轻甜流行感花艺"
+semantic_core: "粉蓝云雾包裹着轻柔发光的恋爱感梦境。"
+key_features: ["粉蓝渐变", "柔焦空气感", "高明度低饱和", "轻甜流行气质", "少量暖光"]
+mapping:
+  flower: "浅粉大花和白色小花承担浪漫主体与云絮。"
+  branch: "轻盈上升枝材只提供柔慢的空气感。"
+  leaf_or_grass: "低存在感浅叶负责结构平衡。"
+  wrapper: "柔软浅粉包装承担晚霞和主情绪。"
+  backboard: "奶蓝与白色层承担天空和冷空气。"
+  special_material: "轻纱、柔纸和浅蓝丝带承担朦胧签名。"
+  negative_space: "在花头和包装之间留出柔焦呼吸。"
+structure: {silhouette: "柔和扇形中心聚拢", height: "medium_high", width: "medium_open", density: "low_medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 2}
+palette:
+  mode: "layered_gradient"
+  dominant: ["浅粉"]
+  secondary: ["奶蓝", "天空蓝", "白色"]
+  accent: ["淡黄色暖光"]
+  accent_behavior: "只作为花心或边缘微光。"
+  purity: 4
+  relationship: "粉色主情绪、蓝色提亮空气、白色透气、暖黄点亮。"
+motion: {primary: "floating", secondary: "soft_outward_opening", direction: "轻微向上并柔和外展", strength: 2}
+physical_dna: {hardness: "soft", gravity: "weightless", material_identity: ["misty", "textile", "matte"]}
+key_rule: "梦幻渐变图的重点是空气与光层，不是机械复制两种颜色。"
+avoid: ["玫红宝蓝高对比", "厚重黑色", "密实厚重花球", "硬锐工业折角"]
+retrieval_tags: ["粉蓝", "梦幻", "专辑", "柔焦", "恋爱感", "高明度", "漂浮", "轻甜"]

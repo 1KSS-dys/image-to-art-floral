@@ -1,0 +1,26 @@
+case_id: "019"
+title: "高饱和群像海报 → 满堂喜剧型花艺"
+semantic_core: "许多性格不同的角色挤在同一个极热闹的红色戏台里。"
+key_features: ["中国红统领空间", "高饱和多人群像", "蓝绿紫黄角色色", "高密度多焦点", "喜剧民俗舞台感"]
+mapping:
+  flower: "多种高饱和花头分别承担主角、配角、群演和怪人。"
+  branch: "长杆辣椒与鹤蕉承担夸张抢戏的局部动作。"
+  leaf_or_grass: "绿色球花和扶郎被提升为完整角色色，不只是叶材。"
+  wrapper: "大红硬包装承担统一戏台和环境。"
+  backboard: "红色平面与海报卡建立电影舞台秩序。"
+  special_material: "金黄与蓝色细丝带提供民俗舞台式收口。"
+  negative_space: "内部留白很少，仅用局部间隔区分角色。"
+structure: {silhouette: "饱满满堂群像型", height: "medium_high", width: "medium_wide", density: "high", center_of_gravity: "middle", focus_architecture: "multi_focus", asymmetry: 3}
+palette:
+  mode: "organized_multicolor"
+  dominant: ["正红", "大红"]
+  secondary: ["宝蓝", "深蓝", "宝石绿", "紫色", "橙色"]
+  accent: ["亮黄", "金黄"]
+  accent_behavior: "各色像角色高低错落出现，绝不平均分配。"
+  purity: 1
+  relationship: "一个强红色舞台统领多个高饱和角色色。"
+motion: {primary: "upward", secondary: "crowded_local_activity", direction: "拥挤中多处上扬和探出", strength: 3}
+physical_dna: {hardness: "structured", gravity: "neutral", material_identity: ["textile", "papery", "glossy", "organic"]}
+key_rule: "群像多色可以复杂，但必须由单一舞台色统一；多色角色不能机械平均。"
+avoid: ["只做红色喜庆或春节花束", "平均彩虹比例", "一个主花压住所有角色", "低饱和莫兰迪", "过度留白"]
+retrieval_tags: ["群像海报", "中国红", "喜剧", "民俗", "多焦点", "高密度", "多角色色", "舞台"]

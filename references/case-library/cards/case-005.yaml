@@ -1,0 +1,26 @@
+case_id: "005"
+title: "黑白眼睛 + 橙色瞳孔 → 单点聚焦型花艺"
+semantic_core: "黑白世界里唯一的橙色焦点把视线向内吸住。"
+key_features: ["无彩色环境", "单一暖色焦点", "面积小但权重最高", "向心凝视", "冷硬压暗"]
+mapping:
+  flower: "一朵或极少量橙色主花承担瞳孔式视觉中心，白灰花做过渡。"
+  branch: "少量竖线维持生命感，不制造外爆。"
+  leaf_or_grass: "黑灰叶材承担瞳孔外围和空间深度。"
+  wrapper: "黑、白、银灰层把视线框向中心。"
+  backboard: "深色底建立压迫和凝视场。"
+  special_material: "冷白光洁面与雾银颗粒对应眼球高光和灰阶。"
+  negative_space: "外围克制，形成指向唯一暖色核心的视觉通道。"
+structure: {silhouette: "纵向中心聚拢雕塑型", height: "medium_high", width: "medium_narrow", density: "low_medium", center_of_gravity: "lower_middle", focus_architecture: "single_focus", asymmetry: 3}
+palette:
+  mode: "dominant_single_accent"
+  dominant: ["黑色", "炭黑", "深灰"]
+  secondary: ["白色", "银灰", "灰绿色"]
+  accent: ["橙色", "锈橙"]
+  accent_behavior: "限制为唯一高饱和视觉中心。"
+  purity: 5
+  relationship: "大面积无彩色为极小暖色焦点服务。"
+motion: {primary: "static", secondary: "inward_focus", direction: "外围向中心", strength: 2}
+physical_dna: {hardness: "hard", gravity: "heavy", material_identity: ["matte", "glossy", "synthetic"]}
+key_rule: "色彩面积不等于视觉权重；极小的强调色也可以成为整束花的唯一主焦点。"
+avoid: ["眼球或睫毛造型", "分散多个橙色点", "粉色透明膜", "柔软梦幻材质"]
+retrieval_tags: ["单点焦点", "黑白", "橙色", "凝视", "向心", "低色数", "高对比", "神秘"]

@@ -1,0 +1,30 @@
+version: "1.2"
+purpose: "Non-floral atmosphere and industrial carriers; these are first-class casting materials, not decorative exceptions."
+materials:
+  - material_id: transparent_carrier_family
+    name_cn: 透明载体家族
+    name_en: Transparent Carrier Family
+    category: special_material
+    variants: [transparent_fiber, translucent_film, organza, clear_plastic, mesh, acrylic_sheet]
+    variants_cn: [透明纤维, 半透明膜, 欧根纱, 透明塑料, 网状材料, 亚克力板]
+    visual_profile: {scale: variable, visual_strength: 4, morphology: {openness: open_or_planar, silhouette: veil_sheet_or_lattice, geometry: flowing_planar_layered}, texture: {softness: variable, surface: smooth_or_woven, richness: low}, line_character: {type: veil_edge_lattice, directionality: medium}, physical_dna: {hardness: soft_to_hard, gravity: floating_or_structured, volume: transparent_layer}}
+    carrier_physical: {material: organza_film_plastic_mesh_acrylic, hardness: soft_to_hard, opacity: transparent_or_translucent, surface: smooth_or_textured, geometry: flowing_planar_layered}
+    roles: [atmosphere, mist, air, wrapper, backboard, enclosure, negative_space_filter]
+    mood_tags: [transparent, floating, misty, synthetic, layered]
+    natural_palette: [clear, white, translucent_gray]
+    treatment_tolerance: {absorption_dye: 2, spray_dye: 5, gradient_dye: 5, edge_dye: 5, center_dye: 4, bleach: 1, metallic_spray: 4}
+    avoid_when: [opaque_heavy_required]
+
+  - material_id: industrial_carrier_family
+    name_cn: 工业载体家族
+    name_en: Industrial Carrier Family
+    category: special_material
+    variants: [metal_mesh, fine_metal_wire, mirror_material, silver_film, black_rigid_sheet]
+    variants_cn: [金属网, 细金属丝, 镜面材料, 银色膜, 黑色硬质片材]
+    visual_profile: {scale: variable, visual_strength: 5, morphology: {openness: lattice_or_planar, silhouette: wire_sheet_or_shard, geometry: angular_mechanical}, texture: {softness: hard, surface: metallic_glossy_or_matte, richness: medium}, line_character: {type: mechanical_line_or_plane, directionality: strong}, physical_dna: {hardness: hard_or_mechanical, gravity: neutral, volume: skeletal_or_planar}}
+    carrier_physical: {material: metallic_film_or_rigid_sheet, hardness: hard_or_mechanical, opacity: opaque_or_reflective, surface: metallic_glossy_or_matte, geometry: planar_angular_fragmented_or_mesh}
+    roles: [structure, motion, hero_material, backboard, accent, micro_information]
+    mood_tags: [industrial, metallic, mechanical, reflective, sharp]
+    natural_palette: [silver, black, gray]
+    treatment_tolerance: {absorption_dye: 1, spray_dye: 5, gradient_dye: 4, edge_dye: 4, center_dye: 2, bleach: 1, metallic_spray: 5}
+    avoid_when: [soft_natural_only]
