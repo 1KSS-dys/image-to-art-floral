@@ -1,6 +1,6 @@
-# Floral Casting Rules V1.2
+# Floral Casting Rules V1.3
 
-Use this file only after Bouquet Structure is fixed. It upgrades material choice; it must not revise Semantic Core, Palette, Focus, Space, Motion, Carrier Assignment, or Bouquet Structure to justify a preferred flower.
+Use this file only after Bouquet Structure is fixed. V1.3 preserves the V1.2 library, Hero, Color Treatment, and Carrier Lock logic. It adds only complexity-bound density and non-floral object translation; it must not revise Semantic Core, Palette, Focus, Space, Motion, Carrier Assignment, or Bouquet Structure to justify a preferred flower.
 
 ## Carrier Lock comes first
 
@@ -37,6 +37,37 @@ Locked Carrier
 ```
 
 Visual Function Diversity matters more than species count. Three to five materials are enough when they cover the required Hero, Support, Motion, Structure, Atmosphere, or carrier functions. Never add a species merely to make the result look more luxurious or varied.
+
+## Complexity-to-density gate
+
+Read `image_complexity.class` and `bouquet_structure.density_strategy` before forming floral candidates.
+
+| Complexity | Required floral structure |
+|---|---|
+| `extreme_minimal` | One Hero Flower, with zero or one restrained supporting group. Filler is optional. Keep deliberate negative space. |
+| `non_minimal` | One or two floral Hero/anchor flowers, two to four functional supporting groups, purposeful filler flower and/or greenery, and explicit front/middle/back depth. |
+
+`extreme_minimal` is valid only when all strict Decoder criteria are met. Uncertainty defaults to `non_minimal`. A plain background or one photographed subject does not by itself justify a sparse bouquet.
+
+Supporting groups are functional clusters—such as color transition, motion, secondary focus, atmosphere, or depth—not a species quota. One material may serve more than one group when its placement clearly separates the functions. Filler/greenery must add depth, rhythm, transition, or texture; do not create a generic filler wall. In a complete bouquet, place foreground accents or low filler in front, the main floral mass and focal anchors in the middle, and line/structure/atmosphere behind, unless the decoded source justifies a different but still explicit three-layer relation.
+
+The density gate does not replace the Hero Gate. If the overall Hero is a locked wrapper, branch, ribbon, or special material, treat the one or two floral Hero/anchor flowers as subordinate botanical anchors. They satisfy floral completeness without stealing highest attention or changing the decoded focus architecture.
+
+## Non-floral object translation gate
+
+Before candidate search, read the completed `object_translation` records. Casting receives only extracted properties and mapped carrier roles—not the source entity as a candidate.
+
+Use this priority:
+
+```text
+Color correspondence
+→ Material / texture correspondence
+→ Form / directional correspondence
+→ Emotional correspondence
+→ Literal entity preservation (prohibited for ordinary props)
+```
+
+Map color to natural or treated flowers and packaging; material and texture to wrapper, ribbon, special material, surface, or fine botanical texture; form to morphology, grouping, branches, and line direction; and emotion to overall refinement, density, rhythm, and style. Never cast clothing, a fabric item, accessory, headwear, utensil, furniture, or another everyday prop as itself, a miniature, or a recognizable silhouette. Typography and source-justified symbolic graphics may remain only under their existing conditional rules.
 
 ## Load the material library
 
@@ -170,6 +201,10 @@ casting_qa:
   unnecessary_material_complexity: false
   unnecessary_luxury_materials: false
   treatment_overuse: false
+  density_strategy_match: true
+  front_mid_back_depth: true
+  object_translation_complete: true
+  literal_nonfloral_object_present: false
 ```
 
-Fail Casting QA when a candidate crosses a locked carrier boundary, a required Hero is fragmented into many equivalent medium flowers, a chosen material cannot perform its assigned morphology/physical role, a treatment is incompatible or unmotivated, a clearly better in-category candidate is ignored in favor of habit, or material count rises without adding a visual function. Re-cast once from requirements; never revise the upstream Decoder to make a favored material fit.
+Fail Casting QA when a candidate crosses a locked carrier boundary, a required Hero is fragmented into many equivalent medium flowers, a chosen material cannot perform its assigned morphology/physical role, a treatment is incompatible or unmotivated, a clearly better in-category candidate is ignored in favor of habit, or material count rises without adding a visual function. Also fail when a `non_minimal` source becomes a sparse single-flower-plus-wrapper result, any required supporting group or spatial layer is missing, an `extreme_minimal` source is needlessly crowded, an object-translation record is incomplete, or a recognizable non-floral source prop survives. Re-cast once from requirements; never revise the upstream Decoder to make a favored material fit.

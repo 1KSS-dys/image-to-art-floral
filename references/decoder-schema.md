@@ -1,6 +1,6 @@
 # Decoder Schema
 
-This is the operational schema for PRD / Core Rules V1.2. The PRD overrides this file if they ever conflict. Complete fields in order; do not use later-stage choices to rewrite earlier observations merely to justify a preferred bouquet. V1.2 leaves Sections 1–7 unchanged and upgrades only Material Casting.
+This is the operational schema for PRD / Core Rules V1.3. The PRD overrides this file if they ever conflict. Complete fields in order; do not use later-stage choices to rewrite earlier observations merely to justify a preferred bouquet. V1.3 preserves V1.2 Carrier Lock and Material Casting, and adds only source-complexity classification, bouquet-density requirements, and non-floral object translation.
 
 ## 1. Semantic Core
 
@@ -19,7 +19,20 @@ visual_priority:
   level_1: []
   level_2: []
   discard: []
+
+image_complexity:
+  class: extreme_minimal | non_minimal
+  score: 1-5
+  evidence:
+    level_1_mechanism_count: 0
+    focal_event_count: 0
+    depth_layer_count: 0
+    texture_material_variety: 0
+    narrative_or_motion_richness: 0
+  density_strategy: minimal | complete
 ```
+
+`extreme_minimal` is a narrow exception, not the default for a clean photograph. Use it only when all of these are true: one indispensable focal mechanism; extensive continuous negative space; low texture and material variety; shallow or absent depth; and no meaningful narrative interaction. If any condition is missing, competing evidence exists, or classification is uncertain, set `class: non_minimal` and `density_strategy: complete`. Do not infer minimality merely from a plain background, one photographed person, or one prominent object.
 
 ## 3. Palette
 
@@ -162,7 +175,33 @@ Allowed `material_identity` values: `watery`, `misty`, `textile`, `papery`, `mat
 
 ### Object and character decoding
 
-For a concrete object, decompose `Object → Color / Shape / Material / Motion / Semantic Role`, retain only its highest-value properties, then map those properties to floral carriers. Use direct entities only when their color, form, semantics, and world all independently fit the source.
+For every Level 1 or important Level 2 non-floral object, create an `object_translation` record before Carrier Assignment. The source entity itself is not a carrier candidate. Decompose it into visual properties, then map only those properties to floral carriers.
+
+```yaml
+object_translation:
+  - source_object_class: ""
+    visual_priority_ref: ""
+    extracted:
+      color: []
+      material: []
+      texture: []
+      form: []
+      emotion: []
+    mapped_to:
+      flower: []
+      wrapper: []
+      ribbon: []
+      special_material: []
+      branch_or_line: []
+    translation_priority:
+      - color
+      - material
+      - form
+      - emotion
+    literal_entity_allowed: false
+```
+
+Apply the mapping priority in this order: color first, then material, form, and emotion. Clothing, fabric items, accessories, headwear, utensils, furniture, and other everyday props must not survive as recognizable entities, silhouettes, miniatures, or wearable objects in the bouquet. Translate them into flower color, treatment, wrapper, ribbon, texture, line, structure, or mood. Typography and source-justified symbolic graphics are narrow visual-texture exceptions; they do not permit reconstructing the source object. Direct preservation of the entity is not a normal fallback and remains `false` unless the authoritative PRD explicitly creates an exception.
 
 Classify a person image before translation as one of:
 
@@ -288,6 +327,15 @@ bouquet_structure:
   center_of_gravity: ""
   asymmetry: 1-5
   focus_count: ""
+  density_strategy: minimal | complete
+  floral_role_plan:
+    hero_or_anchor_flowers: ""
+    supporting_groups: ""
+    filler_or_greenery: ""
+  spatial_layers:
+    front: ""
+    middle: ""
+    back: ""
 ```
 
 Allowed `silhouette` values:
@@ -305,6 +353,13 @@ asymmetric_editorial
 ```
 
 Do not default to a symmetric round bouquet with one central hero, green filler, and outer wrapping. Every structural choice must trace back to the source decoder.
+
+Apply the complexity gate before naming materials:
+
+- `extreme_minimal` + `minimal`: normally one Hero Flower and zero or one restrained supporting group; filler is optional, and depth is added only when the source requires it.
+- `non_minimal` + `complete`: require one or two floral Hero/anchor flowers, two to four functional supporting groups, purposeful filler flower and/or greenery, and explicit front/middle/back depth. A supporting group is a visual-function cluster, not necessarily a new species.
+
+This density rule does not overrule Focus Architecture or Carrier Lock. If the overall Hero is a wrapper, branch, ribbon, or special material, the required floral Hero/anchor roles remain subordinate botanical anchors and must not become the highest-attention element. Filler and greenery must earn a spatial or textural role; they may not become a generic wall of foliage.
 
 ## 8. Material Casting
 
@@ -324,6 +379,12 @@ color_treatment_gate:
 
 casting:
   requirements:
+    density_plan:
+      image_complexity: extreme_minimal | non_minimal
+      hero_or_anchor_count: "1 | 1-2"
+      support_group_count: "0-1 | 2-4"
+      filler_or_greenery_required: false
+      spatial_depth_required: false
     hero:
       required: false
       function: ""
@@ -338,6 +399,10 @@ casting:
     support:
       function: ""
       morphology: []
+      required_groups: 0
+    filler_or_greenery:
+      required: false
+      function: ""
     structure:
       line_character: ""
       hardness: ""
@@ -348,6 +413,7 @@ casting:
   candidate_materials:
     hero: []
     support: []
+    filler_or_greenery: []
     structure: []
     atmosphere: []
 
@@ -361,7 +427,9 @@ casting:
         secondary_color: ""
         distribution: uniform
         intensity: low
+    floral_anchors: []
     support: []
+    filler_or_greenery: []
     ensemble: []
     accent: []
     structure: []
@@ -380,9 +448,13 @@ casting:
     unnecessary_material_complexity: false
     unnecessary_luxury_materials: false
     treatment_overuse: false
+    density_strategy_match: true
+    front_mid_back_depth: true
+    object_translation_complete: true
+    literal_nonfloral_object_present: false
 ```
 
-Follow [Floral Casting Rules V1.2](casting-rules.md). Form three to five Hero candidates only when the Hero Gate requires one, and select from the relevant files in `material-library/`. Non-floral carriers are first-class candidates. Visual Function Diversity matters more than Species Count Diversity; three to five total materials may be enough.
+Follow [Floral Casting Rules V1.3](casting-rules.md). Form three to five Hero candidates only when the Hero Gate requires one, and select from the relevant files in `material-library/`. Non-floral carriers are first-class candidates. Visual Function Diversity matters more than Species Count Diversity; `extreme_minimal` designs may need only a few materials, while `non_minimal` designs must satisfy the complete role and depth plan without inflating species count for decoration.
 
 Judge area weight separately from attention weight. For `single_focus` or `dual_focus`, low-area/high-attention information normally needs one unmistakable Hero role plus at most one or two supports. Hero means highest visual attention and may win through scale, color, shape, isolation, position, material, texture, or contrast; it is not automatically the physically largest flower. Preserve `multi_focus`, `distributed_focus`, and `environment_dominant` architectures instead of forcing a single Hero.
 
