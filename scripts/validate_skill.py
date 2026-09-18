@@ -28,6 +28,7 @@ skill = read(ROOT / "SKILL.md")
 schema = read(ROOT / "references" / "decoder-schema.md")
 generation = read(ROOT / "references" / "generation-prompt-and-qa.md")
 casting_rules = read(ROOT / "references" / "casting-rules.md")
+object_hard_cases = read(ROOT / "references" / "object-translation-hard-cases.md")
 regression = read(ROOT / "references" / "regression-v1.1.md")
 regression_v12 = read(ROOT / "references" / "regression-v1.2.md")
 index_path = ROOT / "references" / "case-library" / "case-index.tsv"
@@ -46,7 +47,7 @@ material_paths = [
 color_treatment = read(material_root / "color-treatment.yaml")
 material_texts = [read(path) for path in material_paths]
 
-priority_markers = ["PRD / Core Rules V1.2 are authoritative", "Decoder Schema", "case library"]
+priority_markers = ["PRD / Core Rules V1.3 are authoritative", "Decoder Schema", "case library"]
 positions = [skill.find(marker) for marker in priority_markers]
 require(all(position >= 0 for position in positions), "authority priority is incomplete")
 require(positions == sorted(positions), "authority priority is out of order")
@@ -71,6 +72,9 @@ for stage in flow:
 schema_fields = [
     "semantic_core:",
     "visual_priority:",
+    "image_complexity:",
+    "class: extreme_minimal | non_minimal",
+    "density_strategy: minimal | complete",
     "palette:",
     "focus:",
     "attention_weight:",
@@ -83,6 +87,8 @@ schema_fields = [
     "state:",
     "destination:",
     "physical_dna:",
+    "object_translation:",
+    "literal_entity_allowed: false",
     "scene_carrier:",
     "carrier_lock:",
     "visual_priority_ref:",
@@ -94,16 +100,29 @@ schema_fields = [
     "main_focus_occlusion: false",
     "carrier_physical:",
     "bouquet_structure:",
+    "floral_role_plan:",
+    "spatial_layers:",
+    "hero_or_anchor_flowers:",
+    "supporting_groups:",
+    "filler_or_greenery:",
     "hero_gate:",
     "color_treatment_gate:",
     "casting:",
     "requirements:",
+    "density_plan:",
+    "hero_or_anchor_count:",
+    "support_group_count:",
     "candidate_materials:",
     "selected_materials:",
+    "floral_anchors:",
     "color_design:",
     "safe_flower_repetition:",
     "unnecessary_luxury_materials: false",
     "treatment_overuse: false",
+    "density_strategy_match: true",
+    "front_mid_back_depth: true",
+    "object_translation_complete: true",
+    "literal_nonfloral_object_present: false",
     "typography:",
     "allow_when_visual_core: true",
     "creative_deviation:",
@@ -150,6 +169,12 @@ qa_fields = [
     "casting_function_diversity_preserved: true",
     "carrier_literal_image_copy: false",
     "carrier_preservation_passed: true",
+    "image_complexity_classified: true",
+    "density_strategy_matches_complexity: true",
+    "complete_floral_layering_present: true",
+    "object_translation_complete: true",
+    "literal_nonfloral_object_present: false",
+    "source_color_emotion_correspondence_passed: true",
 ]
 for field in qa_fields:
     require(field in generation, f"QA field missing: {field}")
@@ -236,7 +261,8 @@ require(carrier_regression_fixture.is_file(), "CASE03 carrier regression fixture
 require(carrier_regression_output.is_file(), "CASE03 validated hotfix output missing")
 
 require("material-library" in skill, "material library is not routed from SKILL.md")
-require("Floral Casting Rules V1.2" in skill, "casting rules are not routed from SKILL.md")
+require("Floral Casting Rules V1.3" in skill, "casting rules are not routed from SKILL.md")
+require("Object Translation Hard Cases" in skill, "object-translation hard cases are not routed from SKILL.md")
 require(
     "Carrier → Function inside that carrier → Morphology → Scale → Texture → Material / Physical DNA → Specific Material → Color Treatment" in skill,
     "carrier-first V1.2 casting order missing from SKILL.md",
@@ -302,6 +328,12 @@ for rule in (
     "Safe Flower Repetition Penalty",
     "unnecessary_luxury_materials: false",
     "treatment_overuse: false",
+    "Complexity-to-density gate",
+    "Non-floral object translation gate",
+    "one or two floral Hero/anchor flowers",
+    "two to four functional supporting groups",
+    "front/middle/back depth",
+    "Literal entity preservation (prohibited for ordinary props)",
 ):
     require(rule in casting_rules, f"casting rule missing: {rule}")
 
@@ -331,6 +363,33 @@ for rule in (
     require(rule in casting_rules, f"environment-support casting rule missing: {rule}")
 
 require("transparent_wrapper_family" in all_material_text, "transparent wrapper packaging family missing")
+
+for rule in (
+    "Case 1 — Scarf or fabric item",
+    "Case 2 — Headwear or accessory",
+    "Case 3 — Conical hat or woven bamboo object",
+    "fibrous, textile-like",
+    "metallic, pearlescent",
+    "woven-texture paper",
+    "Prohibit a real scarf",
+    "Prohibit copied headwear",
+    "Prohibit a recognizable conical hat",
+):
+    require(rule in object_hard_cases, f"object-translation hard case missing: {rule}")
+
+for rule in (
+    "A plain background or one photographed subject does not by itself justify a sparse bouquet",
+    "`non_minimal` source becomes a sparse single-flower-plus-wrapper result",
+    "Casting receives only extracted properties and mapped carrier roles",
+):
+    require(rule in casting_rules, f"V1.3 casting upgrade missing: {rule}")
+
+for rule in (
+    "roughly 80% of the source's important color relationship and emotional character",
+    "A sparse “single flower + wrapper” result for `non_minimal` fails QA",
+    "no recognizable clothing, scarf, fabric object, accessory, headwear, hat, utensil, furniture",
+):
+    require(rule in generation, f"V1.3 generation/QA upgrade missing: {rule}")
 
 rows: list[dict[str, str]] = []
 if index_path.is_file():
@@ -407,4 +466,4 @@ if ERRORS:
         print(f"FAIL: {error}")
     raise SystemExit(1)
 
-print(f"PASS: V1.2 casting patch + Carrier Lock hotfix, fixed decoder flow, {len(material_blocks)} materials, color treatment, carrier-first prompt, QA, CASE03 fixture, and 21-card retrieval are aligned")
+print(f"PASS: V1.3 complexity/density + object-translation upgrade, V1.2 Carrier Lock/Casting protections, fixed decoder flow, {len(material_blocks)} materials, color treatment, carrier-first prompt, QA, CASE03 fixture, three hard cases, and 21-card retrieval are aligned")
