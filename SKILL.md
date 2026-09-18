@@ -1,6 +1,6 @@
 ---
 name: image-to-art-floral
-description: Translate one reference image's palette relationships, focus, space, motion, physical DNA, and emotion into one complete artistic floral arrangement on pure white. Use when the user provides or refers to an image and asks “生成花束”, “根据图片生成花艺”, “把这张图片变成花艺”, “继续生成花艺”, or expresses an equivalent image-to-floral intent. If no image is available, ask the user to attach one. Do not use for ordinary bouquet styling without a reference image, flower identification, or text-only floral copy.
+description: Translate one reference image's palette relationships, focus, space, motion, physical DNA, and emotion into one complete artistic floral arrangement on pure white. Use when the user asks to turn an image into floral art; do not use for ordinary bouquet styling, flower identification, or text-only floral copy.
 ---
 
 # Image to Art Floral
@@ -11,13 +11,13 @@ Translate visual language into floral design. Do not decorate an image with flow
 
 Resolve every conflict in this order:
 
-1. PRD / Core Rules V1.2 are authoritative.
+1. PRD / Core Rules V1.3 are authoritative; V1.3 preserves all V1.2 Carrier Lock and Casting constraints.
 2. [Decoder Schema](references/decoder-schema.md) operationalizes the PRD.
 3. The case library is optional retrieval evidence only.
 
 The input is exactly one reference image. If none is available, ask the user to attach one. Do not ask for flower preferences, budget, use, size, or style unless the user independently adds such constraints.
 
-Before acting, read [Decoder Schema](references/decoder-schema.md), [Floral Casting Rules V1.2](references/casting-rules.md), and [Generation Prompt and QA](references/generation-prompt-and-qa.md) completely. Archived requirements, [V1.1 regression guidance](references/regression-v1.1.md), and [V1.2 Carrier Preservation regression](references/regression-v1.2.md) are for maintenance or evaluation only; do not load them in normal runs.
+Before acting, read [Decoder Schema](references/decoder-schema.md), [Floral Casting Rules V1.3](references/casting-rules.md), and [Generation Prompt and QA](references/generation-prompt-and-qa.md) completely. When a Level 1 or important Level 2 non-floral object is present, also read [Object Translation Hard Cases](references/object-translation-hard-cases.md). Archived requirements, [V1.1 regression guidance](references/regression-v1.1.md), and [V1.2 Carrier Preservation regression](references/regression-v1.2.md) are for maintenance or evaluation only; do not load them in normal runs.
 
 ## Required workflow
 
@@ -39,7 +39,15 @@ Input image
 
 Keep the completed decoder record internal unless the user asks to see it. Never jump from detected colors to flower names. Determine structure before casting any specific material.
 
-After Carrier Assignment, lock every Level 1 carrier before Bouquet Structure or Material Casting. Carrier Assignment outranks Material Casting: search only the material category permitted by each lock, and never substitute foliage, flowers, or branches for a locked wrapper/backboard unless `carrier_override_allowed: true` was explicitly set by the Decoder. A locked packaging carrier may be accompanied—but not replaced—by source-justified Level 2 botanical environment support: no more than 20% of total visible botanical area, dispersed below the main focus, and never crossing in front of or obscuring it. After Bouquet Structure is fixed, derive requirements inside each locked carrier, then use the V1.2 Casting Rules and relevant files under [material-library](material-library/) to select `Carrier → Function inside that carrier → Morphology → Scale → Texture → Material / Physical DNA → Specific Material → Color Treatment`. Natural color is the default; load [Color Treatment](material-library/color-treatment.yaml) only when its gate has a source-derived reason. Do not revise upstream Decoder decisions to justify a preferred material.
+After Visual Priority, classify the source as `extreme_minimal` or `non_minimal`. `extreme_minimal` is a narrow exception requiring one indispensable focal mechanism, extensive continuous negative space, low material/texture variety, little or no depth, and no meaningful narrative interaction. If any criterion is absent or the classification is uncertain, use `non_minimal`.
+
+Before Carrier Assignment, translate every Level 1 or important Level 2 non-floral object through `source object → color / material / texture / form / emotion → flower / wrapper / ribbon / special material / branch or line`. Color has first mapping priority, followed by material, form, then emotion. Clothing, accessories, headwear, utensils, furniture, and other everyday props must never survive as recognizable entities in the bouquet. Typography and source-justified symbolic graphics remain narrow texture exceptions; they do not authorize a copied object.
+
+After Carrier Assignment, lock every Level 1 carrier before Bouquet Structure or Material Casting. Carrier Assignment outranks Material Casting: search only the material category permitted by each lock, and never substitute foliage, flowers, or branches for a locked wrapper/backboard unless `carrier_override_allowed: true` was explicitly set by the Decoder. A locked packaging carrier may be accompanied—but not replaced—by source-justified Level 2 botanical environment support: no more than 20% of total visible botanical area, dispersed below the main focus, and never crossing in front of or obscuring it.
+
+Bouquet Structure must obey the complexity class. `extreme_minimal` may use one Hero Flower with zero or one restrained support group. `non_minimal` must build a complete floral system: one or two floral Hero/anchor flowers, two to four functional supporting groups, purposeful filler flower and/or greenery, and explicit front/middle/back depth. Supporting groups are role-based clusters, not a demand for extra species. When the overall Hero is a locked wrapper, branch, or special material, the floral anchors stay subordinate and must not steal its attention.
+
+After Bouquet Structure is fixed, derive requirements inside each locked carrier, then use the V1.3 Casting Rules and relevant files under [material-library](material-library/) to select `Carrier → Function inside that carrier → Morphology → Scale → Texture → Material / Physical DNA → Specific Material → Color Treatment`. Natural color is the default; load [Color Treatment](material-library/color-treatment.yaml) only when its gate has a source-derived reason. Do not revise upstream Decoder decisions to justify a preferred material.
 
 ### Conditional case retrieval
 
